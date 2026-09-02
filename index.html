@@ -611,35 +611,22 @@
         </div>
     </div>
 
-    <!-- JavaScript Logic and Database -->
+    <!-- JavaScript Logic -->
     <script>
-        // Database: High Protein Simple Recipes
-        const recipes = [
-            // Petit-Déjeuner
-            { id: 1, title: "Pancakes Pro-Banane", type: "petit-dej", ing: ["Œufs", "Banane", "Whey"], rating: 5, prep: 5, cook: 10, rest: 0, prot: 35, carbs: 40, fat: 8, cal: 370, emoji: "🥞", ingredients: ["2 Œufs entiers", "1 Banane mûre (100g)", "30g Whey Vanille", "50ml Lait d'amande"], instructions: ["Écraser la banane et la mélanger aux œufs.", "Ajouter la whey et mélanger jusqu'à consistance lisse.", "Cuire dans une poêle chaude 2 min par côté."] },
-            { id: 2, title: "Omelette Avoine & Dinde", type: "petit-dej", ing: ["Œufs", "Flocons d'avoine"], rating: 4, prep: 5, cook: 8, rest: 0, prot: 32, carbs: 30, fat: 12, cal: 350, emoji: "🍳", ingredients: ["3 Blancs d'œufs + 1 Œuf entier", "40g Flocons d'avoine", "50g Blanc de dinde en dés"], instructions: ["Battre les œufs avec l'avoine.", "Verser dans la poêle et ajouter la dinde.", "Cuire à feu doux pendant 8 min."] },
-            { id: 3, title: "Bowl Skyr & Beurre de Cacahuète", type: "petit-dej", ing: ["Skyr", "Beurre de cacahuète"], rating: 5, prep: 3, cook: 0, rest: 0, prot: 30, carbs: 15, fat: 14, cal: 310, emoji: "🥣", ingredients: ["250g Skyr nature", "20g Beurre de cacahuète", "15g Graines de chia"], instructions: ["Déposer le skyr dans un bol.", "Ajouter le beurre de cacahuète par-dessus.", "Mélanger légèrement et déguster."] },
-            { id: 4, title: "Porridge Cacao Express", type: "petit-dej", ing: ["Flocons d'avoine", "Whey"], rating: 4, prep: 3, cook: 3, rest: 0, prot: 28, carbs: 45, fat: 5, cal: 335, emoji: "🍲", ingredients: ["50g Flocons d'avoine", "30g Whey Cacao", "200ml Eau ou lait"], instructions: ["Chauffer l'avoine avec l'eau 2 min au micro-ondes.", "Incorporer la whey après cuisson.", "Mélanger énergiquement."] },
-            { id: 5, title: "Scramble Tofu Curcuma", type: "petit-dej", ing: ["Tofu"], rating: 4, prep: 5, cook: 7, rest: 0, prot: 22, carbs: 8, fat: 11, cal: 220, emoji: "🧆", ingredients: ["200g Tofu ferme", "1 c.à.c Curcuma", "1 c.à.s Huile d'olive"], instructions: ["Émietter le tofu à la main.", "Faire revenir à la poêle 7 min avec le curcuma et l'huile."] },
-
-            // Dîner / Déjeuner
-            { id: 6, title: "Poulet Avocat & Riz", type: "diner", ing: ["Poulet", "Avocat", "Riz"], rating: 5, prep: 10, cook: 15, rest: 0, prot: 45, carbs: 50, fat: 16, cal: 520, emoji: "🥗", ingredients: ["150g Escalope de poulet", "1/2 Avocat (70g)", "150g Riz cuit"], instructions: ["Cuire le poulet 10 min à la poêle.", "Servir sur le riz chaud.", "Trancher l'avocat par-dessus."] },
-            { id: 7, title: "Bowl Thon & Patate Douce", type: "diner", ing: ["Thon", "Patate douce"], rating: 5, prep: 10, cook: 20, rest: 0, prot: 38, carbs: 40, fat: 4, cal: 350, emoji: "🍠", ingredients: ["1 Boîte de Thon au naturel (120g)", "200g Patate douce", "1 c.à.s Citron"], instructions: ["Couper la patate douce en dés et cuire à la vapeur 20 min.", "Mélanger le thon égoutté avec le citron.", "Assembler dans un bol."] },
-            { id: 8, title: "Sauté de Bœuf Brocoli", type: "diner", ing: ["Boeuf haché", "Brocoli"], rating: 4, prep: 8, cook: 10, rest: 0, prot: 42, carbs: 12, fat: 15, cal: 350, emoji: "🥦", ingredients: ["150g Bœuf haché 5%", "150g Brocoli vapeur", "1 c.à.s Sauce soja"], instructions: ["Faire saisir le bœuf 5 min.", "Ajouter le brocoli et la sauce soja, cuire encore 5 min."] },
-            { id: 9, title: "Tofu Mariné & Riz Champignons", type: "diner", ing: ["Tofu", "Riz"], rating: 4, prep: 10, cook: 12, rest: 10, prot: 26, carbs: 48, fat: 10, cal: 385, emoji: "🍚", ingredients: ["180g Tofu", "150g Riz cuit", "Sauce soja & Ail"], instructions: ["Laisser mariner le tofu 10 min dans la sauce soja.", "Poêler le tofu 12 min jusqu'à dorure.", "Servir avec le riz."] },
-            { id: 10, title: "Salade Protéinée Thon & Œufs", type: "diner", ing: ["Thon", "Œufs"], rating: 5, prep: 8, cook: 9, rest: 0, prot: 40, carbs: 5, fat: 14, cal: 305, emoji: "🥗", ingredients: ["1 Boîte de Thon (120g)", "2 Œufs durs", "Salade verte"], instructions: ["Faire cuire les œufs 9 min dans l'eau bouillante.", "Mélanger avec le thon et la salade."] },
-
-            // Dessert / Snack
-            { id: 11, title: "Mousse Protéinée Skyr Cacao", type: "dessert", ing: ["Skyr", "Whey"], rating: 5, prep: 5, cook: 0, rest: 15, prot: 32, carbs: 10, fat: 2, cal: 185, emoji: "🍨", ingredients: ["200g Skyr", "20g Whey Chocolat", "1 c.à.c Cacao non sucré"], instructions: ["Fouetter énergiquement tous les ingrédients.", "Laisser reposer 15 min au frais pour une texture ferme."] },
-            { id: 12, title: "Shakshuka Express Rapide", type: "diner", ing: ["Œufs"], rating: 4, prep: 5, cook: 12, rest: 0, prot: 20, carbs: 12, fat: 12, cal: 235, emoji: "🥘", ingredients: ["2 Œufs", "150g Sauce tomate", "Épices au choix"], instructions: ["Chauffer la tomate dans une poêle.", "Casser les œufs dedans, couvrir et cuire 6 min."] },
-            { id: 13, title: "Mugcake Proteiné Minute", type: "dessert", ing: ["Whey", "Banane", "Œufs"], rating: 4, prep: 2, cook: 2, rest: 0, prot: 30, carbs: 25, fat: 6, cal: 275, emoji: "🧁", ingredients: ["30g Whey", "1/2 Banane écrasée", "1 Œuf"], instructions: ["Tout mélanger dans une tasse.", "Cuire au micro-ondes 90 secondes."] }
-        ];
-
+        let recipes = [];
         let favorites = JSON.parse(localStorage.getItem('pm_favorites')) || [];
 
         document.addEventListener("DOMContentLoaded", () => {
             updateFavCount();
-            displayRecipes(recipes.slice(0, 4));
+
+            // Chargement dynamique des 50 recettes depuis le fichier recettes.json
+            fetch('recettes.json')
+                .then(response => response.json())
+                .then(data => {
+                    recipes = data;
+                    displayRecipes(recipes.slice(0, 4));
+                })
+                .catch(error => console.error("Erreur de chargement du fichier JSON :", error));
         });
 
         // Search Form Submission
