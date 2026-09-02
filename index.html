@@ -1,329 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recettes Fit & Gourmet</title>
-    <style>
-        :root {
-            --bg-color: #2b1e1a;
-            --card-bg: #33231e;
-            --banner-bg: #422d27;
-            --accent-color: #d97736;
-            --text-light: #f5ebe6;
-            --text-muted: #d1b8ad;
-            --badge-bg: #f7f0e6;
-            --badge-text: #2b1e1a;
-            --amazon-gold: #ff9900;
-        }
+  <meta charset="UTF-8">
+  <title>Recherche de Recettes</title>
+  <style>
+    body {
+      background-color: #2b1810; /* Marron plus foncé */
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-light);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
+    .form-container {
+      background-color: #3d2318;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 0 auto 30px auto;
+    }
 
-        .container { max-width: 850px; margin: 0 auto; }
+    .form-group {
+      margin-bottom: 15px;
+    }
 
-        header {
-            background: linear-gradient(135deg, #1f1411 0%, #3a2822 100%);
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid #4a342c;
-            margin-bottom: 25px;
-        }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-        header h1 { margin: 0 0 10px 0; color: #f7d6c8; }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #663b2a;
+      background-color: #1f110b;
+      color: #fff;
+      box-sizing: border-box;
+    }
 
-        .legend {
-            background-color: #231815;
-            padding: 8px 15px;
-            border-radius: 6px;
-            font-size: 0.85em;
-            display: inline-block;
-            margin-top: 10px;
-            color: #e2c0b2;
-        }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #8b4513;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-        .interactive-panel {
-            background-color: #382721;
-            border: 1px solid #543b32;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 25px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
+    button:hover {
+      background-color: #a0522d;
+    }
 
-        @media (max-width: 600px) { .interactive-panel { grid-template-columns: 1fr; } }
+    /* Masqué par défaut jusqu'à validation */
+    #resultats {
+      display: none;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        .panel-group label {
-            display: block;
-            font-weight: bold;
-            color: #e8cca4;
-            font-size: 0.9em;
-            margin-bottom: 5px;
-        }
-
-        .panel-group input, .panel-group select {
-            width: 100%;
-            padding: 8px 12px;
-            background-color: #231815;
-            border: 1px solid #63473c;
-            color: var(--text-light);
-            border-radius: 6px;
-            box-sizing: border-box;
-        }
-
-        .recipe-card {
-            background-color: var(--card-bg);
-            border: 1px solid #4a342c;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        .recipe-header {
-            background-color: var(--banner-bg);
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #543b32;
-        }
-
-        .recipe-header h2 { margin: 0; font-size: 1.3em; color: #f7d6c8; }
-        .recipe-meta { text-align: right; font-size: 0.85em; color: var(--text-muted); }
-        .stars { color: #f39c12; }
-        .recipe-body { padding: 20px; }
-
-        .macros-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            background-color: #231815;
-            padding: 10px;
-            border-radius: 8px;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .macro-val { display: block; font-weight: bold; color: #f7d6c8; }
-        .macro-label { font-size: 0.75em; color: var(--text-muted); }
-
-        .section-title {
-            font-size: 0.95em;
-            color: #e8cca4;
-            text-transform: uppercase;
-            border-left: 3px solid var(--accent-color);
-            padding-left: 8px;
-            margin: 15px 0 10px 0;
-        }
-
-        .ingredients-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
-
-        .ingredient-badge {
-            background-color: var(--badge-bg);
-            color: var(--badge-text);
-            font-weight: 600;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-        }
-
-        .ingredient-badge .qty { color: #b84a00; font-weight: bold; }
-
-        .custom-tag {
-            background-color: #e8cca4 !important;
-            border: 1px dashed #b84a00;
-        }
-
-        .timer-container {
-            background-color: #231815;
-            border: 1px dashed var(--accent-color);
-            padding: 10px 15px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 15px;
-        }
-
-        .timer-btn {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 6px 14px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .timer-btn:hover { background-color: #be6123; }
-
-        .amazon-box {
-            background-color: #281c18;
-            padding: 12px 20px;
-            border-top: 1px solid #4a342c;
-            font-size: 0.85em;
-        }
-
-        .amazon-box strong { color: var(--amazon-gold); display: block; margin-bottom: 5px; }
-        .amazon-link { color: #f7d6c8; margin-right: 15px; text-decoration: underline; }
-        .amazon-link:hover { color: var(--amazon-gold); }
-    </style>
+    .recette-card {
+      background-color: #3d2318;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <header>
-        <h1>RECETTES FIT & GOURMET</h1>
-        <p>Alimentation protéinée & Outils interactifs</p>
-        <div class="legend">
-            <strong>Légende :</strong> ★☆☆☆☆ = Très facile &nbsp;|&nbsp; ★★★☆☆ = Technique moyenne &nbsp;|&nbsp; ★★★★★ = Élaboré
+  <div class="form-container">
+    <h2>Trouver une recette</h2>
+    <form id="recipeForm">
+      
+      <!-- Nombre de personnes libre -->
+      <div class="form-group">
+        <label for="personnes">Nombre de personnes :</label>
+        <input type="number" id="personnes" name="personnes" min="1" value="2" required>
+      </div>
+
+      <!-- Ingrédient 1 avec la liste -->
+      <div class="form-group">
+        <label for="ingredient1">Ingrédient 1 :</label>
+        <select id="ingredient1" name="ingredient1">
+          <option value="">-- Choisir un ingrédient --</option>
+          <option value="poulet">Poulet</option>
+          <option value="boeuf">Bœuf</option>
+          <option value="saumon">Saumon</option>
+          <option value="thon">Thon</option>
+          <option value="crevettes">Crevettes</option>
+          <option value="oeufs">Œufs</option>
+          <option value="tofu">Tofu</option>
+          <option value="riz">Riz</option>
+          <option value="pates">Pâtes</option>
+          <option value="lentilles">Lentilles</option>
+          <option value="avocat">Avocat</option>
+          <option value="patate_douce">Patate douce</option>
+        </select>
+      </div>
+
+      <!-- Ingrédient 2 optionnel -->
+      <div class="form-group">
+        <label for="ingredient2">Ingrédient 2 (optionnel) :</label>
+        <input type="text" id="ingredient2" name="ingredient2" placeholder="Ex: Brocoli, Miel, Citron...">
+      </div>
+
+      <!-- Type de plat -->
+      <div class="form-group">
+        <label for="typePlat">Type de plat :</label>
+        <select id="typePlat" name="typePlat">
+          <option value="tous">Tous les types</option>
+          <option value="petit_dejeuner">Petit-déjeuner / Snack</option>
+          <option value="entree_salade">Bowls & Salades</option>
+          <option value="plat_chaud">Plat chaud du quotidien</option>
+          <option value="poisson_viande">Poissons & Viandes</option>
+          <option value="mijote">Mijoté / Élaboré</option>
+        </select>
+      </div>
+
+      <button type="submit">Valider</button>
+    </form>
+  </div>
+
+  <!-- Section résultats masquée par défaut -->
+  <div id="resultats">
+    <h2>Recettes correspondantes</h2>
+    <div id="listeRecettes"></div>
+  </div>
+
+  <script>
+    document.getElementById('recipeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Récupération des valeurs du formulaire
+      const nbPersonnes = document.getElementById('personnes').value;
+      const ing1 = document.getElementById('ingredient1').value;
+      const ing2 = document.getElementById('ingredient2').value;
+      const type = document.getElementById('typePlat').value;
+
+      // Affichage de la zone de résultats après validation
+      const resultatsDiv = document.getElementById('resultats');
+      const listeDiv = document.getElementById('listeRecettes');
+      
+      resultatsDiv.style.display = 'block';
+
+      // Exemple d'affichage dynamique des critères sélectionnés
+      listeDiv.innerHTML = `
+        <div class="recette-card">
+          <h3>Recherche validée !</h3>
+          <p><strong>Personnes :</strong> ${nbPersonnes}</p>
+          <p><strong>Ingrédient principal :</strong> ${ing1 || 'Non spécifié'}</p>
+          <p><strong>Ingrédient secondaire :</strong> ${ing2 || 'Aucun'}</p>
+          <p><strong>Type de plat :</strong> ${type}</p>
         </div>
-    </header>
-
-    <div class="interactive-panel">
-        <div class="panel-group">
-            <label for="portionSelect">👤 Nombre de personnes :</label>
-            <select id="portionSelect" onchange="updatePortions()">
-                <option value="1">1 Personne (Par défaut)</option>
-                <option value="2">2 Personnes (x2)</option>
-                <option value="4">4 Personnes (x4)</option>
-            </select>
-        </div>
-        <div class="panel-group">
-            <label for="customIngredient">➕ Ingrédient sur mesure :</label>
-            <input type="text" id="customIngredient" placeholder="Ex: 10g Graines de courge..." onkeypress="addCustomIngredient(event)">
-        </div>
-    </div>
-
-    <!-- Zone d'affichage dynamique des recettes -->
-    <div id="recipesContainer"></div>
-</div>
-
-<script>
-    let recipesData = [];
-
-    // Chargement du fichier JSON
-    fetch('recettes.json')
-        .then(response => response.json())
-        .then(data => {
-            recipesData = data;
-            renderRecipes(recipesData);
-        })
-        .catch(error => console.error("Erreur de chargement des recettes :", error));
-
-    function renderRecipes(recipes) {
-        const container = document.getElementById('recipesContainer');
-        container.innerHTML = '';
-
-        recipes.forEach(r => {
-            let ingredientsHTML = r.ingredients.map(ing => {
-                if(ing.texteFixe) {
-                    return `<span class="ingredient-badge">${ing.texteFixe}</span>`;
-                }
-                return `<span class="ingredient-badge"><span class="qty" data-base="${ing.base}">${ing.base}</span>${ing.unite} ${ing.nom}</span>`;
-            }).join('');
-
-            let instructionsHTML = r.instructions.map(inst => `<li>${inst}</li>`).join('');
-
-            let amazonHTML = r.amazon ? r.amazon.map(a => `<a class="amazon-link" target="_blank" href="${a.url}">${a.texte}</a>`).join('') : '';
-
-            const card = document.createElement('div');
-            card.className = 'recipe-card';
-            card.innerHTML = `
-                <div class="recipe-header">
-                    <h2>${r.id}. ${r.titre}</h2>
-                    <div class="recipe-meta">
-                        <span class="stars">${r.difficulte}</span><br>
-                        <span>${r.temps}</span>
-                    </div>
-                </div>
-                <div class="recipe-body">
-                    <div class="macros-grid">
-                        <div><span class="macro-val">${r.kcal}</span><span class="macro-label">kcal</span></div>
-                        <div><span class="macro-val">${r.proteines}</span><span class="macro-label">Protéines</span></div>
-                        <div><span class="macro-val">${r.glucides}</span><span class="macro-label">Glucides</span></div>
-                        <div><span class="macro-val">${r.lipides}</span><span class="macro-label">Lipides</span></div>
-                    </div>
-                    <div class="section-title">Ingrédients</div>
-                    <div class="ingredients-list">${ingredientsHTML}</div>
-                    <div class="section-title">Instructions</div>
-                    <ol>${instructionsHTML}</ol>
-                    ${r.timerSec ? `
-                    <div class="timer-container">
-                        <span>⏱️ Minuteur : <strong>--:--</strong></span>
-                        <button class="timer-btn" onclick="startTimer(this, ${r.timerSec})">${r.timerLabel}</button>
-                    </div>` : ''}
-                </div>
-                ${amazonHTML ? `
-                <div class="amazon-box">
-                    <strong>🛒 Matériel & Produits Recommandés :</strong>
-                    ${amazonHTML}
-                </div>` : ''}
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    function updatePortions() {
-        const factor = parseFloat(document.getElementById('portionSelect').value);
-        const qtyElements = document.querySelectorAll('.qty');
-
-        qtyElements.forEach(el => {
-            const baseValue = parseFloat(el.getAttribute('data-base'));
-            if (!isNaN(baseValue)) {
-                let newValue = baseValue * factor;
-                el.innerText = Number.isInteger(newValue) ? newValue : newValue.toFixed(1);
-            }
-        });
-    }
-
-    function addCustomIngredient(event) {
-        if (event.key === 'Enter') {
-            const input = document.getElementById('customIngredient');
-            const value = input.value.trim();
-
-            if (value !== "") {
-                const lists = document.querySelectorAll('.ingredients-list');
-                lists.forEach(list => {
-                    const badge = document.createElement('span');
-                    badge.className = 'ingredient-badge custom-tag';
-                    badge.innerText = "➕ " + value;
-                    list.appendChild(badge);
-                });
-                input.value = "";
-            }
-        }
-    }
-
-    function startTimer(btn, seconds) {
-        btn.disabled = true;
-        let remaining = seconds;
-        const container = btn.parentElement.querySelector('strong');
-
-        const interval = setInterval(() => {
-            let m = Math.floor(remaining / 60);
-            let s = remaining % 60;
-            container.innerText = `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
-
-            if (remaining <= 0) {
-                clearInterval(interval);
-                container.innerText = "Terminé ! 🔔";
-                btn.disabled = false;
-            }
-            remaining--;
-        }, 1000);
-    }
-</script>
+      `;
+    });
+  </script>
 
 </body>
 </html>
