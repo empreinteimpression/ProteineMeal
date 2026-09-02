@@ -1,1 +1,58 @@
-
+[
+  {
+    "id": 1,
+    "titre": "Bowl Poulet, Avocat & Riz Basmati",
+    "difficulte": "★★☆☆☆",
+    "temps": "Cuisson: 15 min",
+    "timerSec": 900,
+    "timerLabel": "Lancer 15 min",
+    "kcal": 480,
+    "proteines": "42g",
+    "glucides": "45g",
+    "lipides": "14g",
+    "ingredients": [
+      {"nom": "Blanc de poulet", "base": 150, "unite": "g"},
+      {"nom": "Riz basmati (cru)", "base": 60, "unite": "g"},
+      {"nom": "Avocat mûr", "base": 0.5, "unite": " portion"},
+      {"nom": "Huile d'olive", "texteFixe": "1 c.à.s Huile d'olive"},
+      {"nom": "Épices", "texteFixe": "Paprika & Herbes"}
+    ],
+    "instructions": [
+      "Faire cuire le riz basmati dans l'eau bouillante (12 min).",
+      "Assaisonner le poulet coupé en dés.",
+      "Cuire le poulet à la poêle à feu moyen pendant 15 minutes.",
+      "Dresser avec l'avocat en tranches."
+    ],
+    "amazon": [
+      {"texte": "Balance de précision", "url": "https://www.amazon.fr/dp/B000BGS93K?tag=cupgour-21"},
+      {"texte": "Riz Basmati Bio 1kg", "url": "https://www.amazon.fr/dp/B0733B1S8P?tag=cupgour-21"}
+    ]
+  },
+  {
+    "id": 2,
+    "titre": "Pudding Chia aux Fruits Rouges",
+    "difficulte": "★☆☆☆☆",
+    "temps": "Repos: 30 min min.",
+    "timerSec": 1800,
+    "timerLabel": "Lancer 30 min",
+    "kcal": 290,
+    "proteines": "12g",
+    "glucides": "28g",
+    "lipides": "11g",
+    "ingredients": [
+      {"nom": "Graines de chia", "base": 30, "unite": "g"},
+      {"nom": "Lait d'amande", "base": 200, "unite": "ml"},
+      {"nom": "Sirop d'agave", "texteFixe": "1 c.à.s Sirop d'agave"},
+      {"nom": "Fruits rouges", "base": 80, "unite": "g"}
+    ],
+    "instructions": [
+      "Mélanger les graines de chia, le lait et le sirop d'agave dans un pot.",
+      "Fouetter 1 minute.",
+      "Laisser au frais 30 minutes minimum pour gélification.",
+      "Ajouter les fruits rouges au moment de servir."
+    ],
+    "amazon": [
+      {"texte": "Graines de Chia Bio 1kg", "url": "https://www.amazon.fr/dp/B01BML3DGG?tag=cupgour-21"}
+    ]
+  }
+]
