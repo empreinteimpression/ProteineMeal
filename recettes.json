@@ -1,1134 +1,138 @@
 [
   {
     "id": 1,
-    "titre": "Omelette Légère aux Herbes",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Cuisson: 5 min",
-    "timerSec": 300,
-    "timerLabel": "Lancer 5 min",
-    "kcal": 210,
-    "proteines": "18g",
-    "glucides": "2g",
-    "lipides": "14g",
-    "ingredients": [
-      {"nom": "Œufs entiers", "base": 3, "unite": " gros"},
-      {"nom": "Ciboulette fraîche", "texteFixe": "1 c.à.s Ciboulette hachée"},
-      {"nom": "Huile d'olive", "texteFixe": "1 c.à.c Huile d'olive"}
-    ],
-    "instructions": [
-      "Fouetter les œufs avec le sel et la ciboulette.",
-      "Chauffer la poêle avec l'huile à feu moyen.",
-      "Verser le mélange et cuire 5 minutes en ramenant les bords."
-    ],
-    "amazon": [{"texte": "Poêle Antiadhésive 24cm", "url": "https://www.amazon.fr/dp/B00S3332S6?tag=cupgour-21"}]
+    "title": "Poulet sauté au Brocoli & Riz",
+    "type": "diner",
+    "ing": ["Poulet", "Brocoli", "Riz"],
+    "emoji": "🍗",
+    "rating": 5,
+    "prot": 42,
+    "carbs": 45,
+    "fat": 6,
+    "cal": 400,
+    "prep": 10,
+    "cook": 15,
+    "rest": 0,
+    "ingredients": ["150g de blanc de poulet", "100g de riz basmati cuit", "150g de brocoli fresh", "1 c.à.s de sauce soja light"],
+    "instructions": ["Fais cuire le riz et le brocoli à la vapeur.", "Saisis les dés de poulet dans une poêle antiadhésive pendant 10 min.", "Mélange le tout avec la sauce soja et sers chaud."]
   },
   {
     "id": 2,
-    "titre": "Skyr Miel et Amandes",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Préparation: 2 min",
-    "kcal": 230,
-    "proteines": "25g",
-    "glucides": "20g",
-    "lipides": "5g",
-    "ingredients": [
-      {"nom": "Skyr nature", "base": 200, "unite": "g"},
-      {"nom": "Miel pur", "texteFixe": "1 c.à.s Miel"},
-      {"nom": "Amandes effilées", "base": 15, "unite": "g"}
-    ],
-    "instructions": [
-      "Verser le skyr dans un bol.",
-      "Napper de miel et parsemer d'amandes effilées."
-    ],
-    "amazon": [{"texte": "Amandes Effilées Bio 500g", "url": "https://www.amazon.fr/dp/B01BML3DGG?tag=cupgour-21"}]
+    "title": "Omelette Protéinée aux Épinards",
+    "type": "petit-dej",
+    "ing": ["Œufs"],
+    "emoji": "🍳",
+    "rating": 5,
+    "prot": 30,
+    "carbs": 3,
+    "fat": 14,
+    "cal": 260,
+    "prep": 5,
+    "cook": 8,
+    "rest": 0,
+    "ingredients": ["3 œufs entiers", "2 blancs d'œufs", "50g d'épinards frais", "Sel, poivre et herbes"],
+    "instructions": ["Bats les œufs dans un bol avec le sel et le poivre.", "Verses la préparation dans une poêle chaude et ajoute les épinards.", "Laisse cuire à feu doux pendant 8 minutes."]
   },
   {
     "id": 3,
-    "titre": "Tartine Avocat & Œuf Poché",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Cuisson: 4 min",
-    "timerSec": 240,
-    "timerLabel": "Lancer 4 min",
-    "kcal": 310,
-    "proteines": "14g",
-    "glucides": "22g",
-    "lipides": "18g",
-    "ingredients": [
-      {"nom": "Pain complet grillé", "base": 1, "unite": " tranche"},
-      {"nom": "Avocat mûr", "base": 0.5, "unite": " portion"},
-      {"nom": "Œuf frais", "base": 1, "unite": " unité"}
-    ],
-    "instructions": [
-      "Écraser l'avocat sur la tranche de pain grillée.",
-      "Pocher l'œuf 4 minutes dans l'eau frémissante vinaigrée.",
-      "Déposer l'œuf sur l'avocat et assaisonner."
-    ]
+    "title": "Bowl Tofu Grillé & Patate Douce",
+    "type": "diner",
+    "ing": ["Tofu", "Patate douce", "Avocat"],
+    "emoji": "🧊",
+    "rating": 4,
+    "prot": 28,
+    "carbs": 50,
+    "fat": 15,
+    "cal": 440,
+    "prep": 15,
+    "cook": 20,
+    "rest": 0,
+    "ingredients": ["150g de tofu ferme", "150g de patate douce", "1/2 avocat", "Épices au choix"],
+    "instructions": ["Coupe la patate douce en dés et fais-la rôtir 20 min au four à 200°C.", "Fais dorera le tofu à la poêle avec les épices.", "Assemble le tout dans un bowl avec l'avocat."]
   },
   {
     "id": 4,
-    "titre": "Smoothie Protéiné Banane & Beurre de Cacahuète",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Mixage: 1 min",
-    "kcal": 380,
-    "proteines": "28g",
-    "glucides": "42g",
-    "lipides": "12g",
-    "ingredients": [
-      {"nom": "Banane mûre", "base": 1, "unite": " unité"},
-      {"nom": "Lait d'amande", "base": 250, "unite": "ml"},
-      {"nom": "Beurre de cacahuète", "base": 20, "unite": "g"},
-      {"nom": "Whey protéine", "base": 25, "unite": "g"}
-    ],
-    "instructions": [
-      "Mettre tous les ingrédients dans le blender.",
-      "Mixer à pleine puissance pendant 1 minute."
-    ],
-    "amazon": [{"texte": "Blender Nutribullet", "url": "https://www.amazon.fr/dp/B00S3332S6?tag=cupgour-21"}]
+    "title": "Pancakes Pro au Skyr & Avoine",
+    "type": "petit-dej",
+    "ing": ["Flocons d'avoine", "Skyr", "Œufs", "Banane"],
+    "emoji": "🥞",
+    "rating": 5,
+    "prot": 35,
+    "carbs": 55,
+    "fat": 8,
+    "cal": 430,
+    "prep": 5,
+    "cook": 10,
+    "rest": 0,
+    "ingredients": ["60g de flocons d'avoine", "100g de Skyr", "1 œuf", "1 banane écrasée"],
+    "instructions": ["Mixe tous les ingrédients ensemble jusqu'à obtenir une pâte lisse.", "Fais cuire de petits pancakes dans une poêle 2 min par côté.", "Sers chaud avec un supplément de Skyr."]
   },
   {
     "id": 5,
-    "titre": "Salade de Thon, Maïs & Concombre",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Préparation: 5 min",
-    "kcal": 340,
-    "proteines": "35g",
-    "glucides": "22g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Thon au naturel", "base": 130, "unite": "g"},
-      {"nom": "Maïs doux", "base": 100, "unite": "g"},
-      {"nom": "Concombre dés", "base": 100, "unite": "g"},
-      {"nom": "Jus de citron", "texteFixe": "1 c.à.s Jus de citron"}
-    ],
-    "instructions": [
-      "Égoutter le thon et le maïs.",
-      "Mélanger avec le concombre coupé en dés et assaisonner de jus de citron."
-    ]
+    "title": "Shaker Anabolique Whey & Banane",
+    "type": "dessert",
+    "ing": ["Whey", "Banane", "Beurre de cacahuète"],
+    "emoji": "🥤",
+    "rating": 4,
+    "prot": 38,
+    "carbs": 32,
+    "fat": 9,
+    "cal": 360,
+    "prep": 3,
+    "cook": 0,
+    "rest": 0,
+    "ingredients": ["30g de Whey protéine", "1 banane", "15g de beurre de cacahuète", "250ml d'eau ou de lait végétal"],
+    "instructions": ["Met tous les ingrédients dans le blender.", "Mixe pendant 30 secondes à pleine puissance.", "A consommer immédiatement après l'entraînement."]
   },
   {
     "id": 6,
-    "titre": "Pudding Chia aux Fruits Rouges",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Repos: 30 min min.",
-    "timerSec": 1800,
-    "timerLabel": "Lancer 30 min",
-    "kcal": 290,
-    "proteines": "12g",
-    "glucides": "28g",
-    "lipides": "11g",
-    "ingredients": [
-      {"nom": "Graines de chia", "base": 30, "unite": "g"},
-      {"nom": "Lait d'amande", "base": 200, "unite": "ml"},
-      {"nom": "Sirop d'agave", "texteFixe": "1 c.à.s Sirop d'agave"},
-      {"nom": "Fruits rouges", "base": 80, "unite": "g"}
-    ],
-    "instructions": [
-      "Mélanger les graines de chia, le lait et le sirop d'agave dans un pot.",
-      "Fouetter 1 minute.",
-      "Laisser au frais 30 minutes minimum.",
-      "Ajouter les fruits rouges au moment de servir."
-    ],
-    "amazon": [{"texte": "Graines de Chia Bio 1kg", "url": "https://www.amazon.fr/dp/B01BML3DGG?tag=cupgour-21"}]
+    "title": "Salade Rapid' Thon & Avocat",
+    "type": "diner",
+    "ing": ["Thon", "Avocat"],
+    "emoji": "🐟",
+    "rating": 4,
+    "prot": 34,
+    "carbs": 8,
+    "fat": 18,
+    "cal": 330,
+    "prep": 7,
+    "cook": 0,
+    "rest": 0,
+    "ingredients": ["1 boîte de thon au naturel (130g)", "1 avocat mûr", "Jus de citron", "Sel et poivre"],
+    "instructions": ["Égoutte le thon et écrase-le dans un bol.", "Coupe l'avocat en dés et mélange-le au thon.", "Assaisonne de jus de citron, sel et poivre."]
   },
   {
     "id": 7,
-    "titre": "Toast Fromage Blanc & Saumon Fumé",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Préparation: 5 min",
-    "kcal": 280,
-    "proteines": "24g",
-    "glucides": "20g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Pain de seigle", "base": 2, "unite": " tranches"},
-      {"nom": "Fromage blanc 0%", "base": 60, "unite": "g"},
-      {"nom": "Saumon fumé", "base": 60, "unite": "g"},
-      {"nom": "Aneth", "texteFixe": "1 pincée d'Aneth"}
-    ],
-    "instructions": [
-      "Tartiner le fromage blanc sur le pain.",
-      "Disposer les tranches de saumon et saupoudrer d'aneth."
-    ]
+    "title": "Steak Haché & Patate Douce Rôtie",
+    "type": "diner",
+    "ing": ["Boeuf haché", "Patate douce"],
+    "emoji": "🥩",
+    "rating": 5,
+    "prot": 45,
+    "carbs": 40,
+    "fat": 12,
+    "cal": 450,
+    "prep": 10,
+    "cook": 15,
+    "rest": 0,
+    "ingredients": ["150g de steak haché 5% MG", "200g de patate douce", "Herbes de Provence"],
+    "instructions": ["Coupe la patate douce en frites et cuis-la à l'airfryer ou four (15 min).", "Saisis le steak à la poêle selon la cuisson souhaitée.", "Sers directement."]
   },
   {
     "id": 8,
-    "titre": "Wrap Poulet & Crudités Express",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Préparation: 5 min",
-    "kcal": 360,
-    "proteines": "30g",
-    "glucides": "35g",
-    "lipides": "9g",
-    "ingredients": [
-      {"nom": "Galette de blé complet", "base": 1, "unite": " unité"},
-      {"nom": "Blanc de poulet cuit", "base": 100, "unite": "g"},
-      {"nom": "Salade verte & Carotte râpée", "base": 50, "unite": "g"},
-      {"nom": "Yourt grec", "base": 30, "unite": "g"}
-    ],
-    "instructions": [
-      "Tartiner le yaourt sur la galette.",
-      "Ajouter les crudités et le poulet émincé.",
-      "Rouler serré et couper en deux."
-    ]
-  },
-  {
-    "id": 9,
-    "titre": "Edamame Sautés à l'Ail",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Cuisson: 6 min",
-    "timerSec": 360,
-    "timerLabel": "Lancer 6 min",
-    "kcal": 220,
-    "proteines": "18g",
-    "glucides": "14g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Edamames", "base": 200, "unite": "g"},
-      {"nom": "Sauce soja réduit en sel", "texteFixe": "1 c.à.s Sauce soja"},
-      {"nom": "Huile de sésame", "texteFixe": "1 c.à.c Huile de sésame"},
-      {"nom": "Ail émincé", "base": 1, "unite": " gousse"}
-    ],
-    "instructions": [
-      "Faire revenir l'ail dans l'huile de sésame.",
-      "Ajouter les edamames et la sauce soja pendant 6 minutes."
-    ]
-  },
-  {
-    "id": 10,
-    "titre": "Tartine Poire, Noix & Ricotta",
-    "difficulte": "★☆☆☆☆",
-    "temps": "Préparation: 5 min",
-    "kcal": 310,
-    "proteines": "11g",
-    "glucides": "38g",
-    "lipides": "13g",
-    "ingredients": [
-      {"nom": "Pain complet", "base": 2, "unite": " tranches"},
-      {"nom": "Ricotta", "base": 50, "unite": "g"},
-      {"nom": "Poire fraîche", "base": 0.5, "unite": " unité"},
-      {"nom": "Cerneaux de noix", "base": 15, "unite": "g"}
-    ],
-    "instructions": [
-      "Tartiner la ricotta sur le pain grillé.",
-      "Ajouter des tranches de poire fine et les noix concassées."
-    ]
-  },
-  {
-    "id": 11,
-    "titre": "Pancakes Protéinés Banane & Avoine",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 2 min/face",
-    "timerSec": 120,
-    "timerLabel": "Lancer 2 min",
-    "kcal": 410,
-    "proteines": "30g",
-    "glucides": "52g",
-    "lipides": "8g",
-    "ingredients": [
-      {"nom": "Banane mûre", "base": 1, "unite": " unité"},
-      {"nom": "Flocons d'avoine", "base": 60, "unite": "g"},
-      {"nom": "Œufs entiers", "base": 2, "unite": " unités"},
-      {"nom": "Whey Vanille", "base": 30, "unite": "g"}
-    ],
-    "instructions": [
-      "Mixer tous les ingrédients dans un blender.",
-      "Cuire dans une poêle chaude environ 2 minutes par face."
-    ]
-  },
-  {
-    "id": 12,
-    "titre": "Bowl Poulet, Avocat & Riz Basmati",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 480,
-    "proteines": "42g",
-    "glucides": "45g",
-    "lipides": "14g",
-    "ingredients": [
-      {"nom": "Blanc de poulet", "base": 150, "unite": "g"},
-      {"nom": "Riz basmati (cru)", "base": 60, "unite": "g"},
-      {"nom": "Avocat mûr", "base": 0.5, "unite": " portion"},
-      {"nom": "Huile d'olive", "texteFixe": "1 c.à.s Huile d'olive"},
-      {"nom": "Épices", "texteFixe": "Paprika & Herbes"}
-    ],
-    "instructions": [
-      "Faire cuire le riz basmati dans l'eau bouillante (12 min).",
-      "Assaisonner le poulet coupé en dés.",
-      "Cuire le poulet à la poêle à feu moyen pendant 15 minutes.",
-      "Dresser avec l'avocat en tranches."
-    ]
-  },
-  {
-    "id": 13,
-    "titre": "Pâtes de Lentilles au Pesto & Dinde",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 10 min",
-    "timerSec": 600,
-    "timerLabel": "Lancer 10 min",
-    "kcal": 520,
-    "proteines": "45g",
-    "glucides": "50g",
-    "lipides": "15g",
-    "ingredients": [
-      {"nom": "Pâtes de lentilles corail", "base": 80, "unite": "g"},
-      {"nom": "Escalope de dinde", "base": 130, "unite": "g"},
-      {"nom": "Pesto verde", "base": 20, "unite": "g"},
-      {"nom": "Tomates cerises", "base": 80, "unite": "g"}
-    ],
-    "instructions": [
-      "Cuire les pâtes 8 à 10 minutes.",
-      "Faire saisir la dinde coupée en lanières.",
-      "Mélanger le tout avec le pesto et les tomates cerises coupées en deux."
-    ]
-  },
-  {
-    "id": 14,
-    "titre": "Salade Quinoa, Féta & Grenade",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 12 min",
-    "timerSec": 720,
-    "timerLabel": "Lancer 12 min",
-    "kcal": 420,
-    "proteines": "16g",
-    "glucides": "52g",
-    "lipides": "16g",
-    "ingredients": [
-      {"nom": "Quinoa (cru)", "base": 60, "unite": "g"},
-      {"nom": "Féta allégée", "base": 50, "unite": "g"},
-      {"nom": "Graines de grenade", "base": 40, "unite": "g"},
-      {"nom": "Concombre dés", "base": 60, "unite": "g"}
-    ],
-    "instructions": [
-      "Rincer et cuire le quinoa 12 minutes.",
-      "Laisser refroidir puis mélanger avec la féta émiettée, le concombre et la grenade."
-    ]
-  },
-  {
-    "id": 15,
-    "titre": "Omelette aux Épinards & Chèvre",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 7 min",
-    "timerSec": 420,
-    "timerLabel": "Lancer 7 min",
-    "kcal": 350,
-    "proteines": "22g",
-    "glucides": "4g",
-    "lipides": "27g",
-    "ingredients": [
-      {"nom": "Œufs entiers", "base": 3, "unite": " unités"},
-      {"nom": "Épinards frais", "base": 80, "unite": "g"},
-      {"nom": "Buche de chèvre", "base": 30, "unite": "g"},
-      {"nom": "Beurre", "base": 10, "unite": "g"}
-    ],
-    "instructions": [
-      "Faire tomber les épinards dans la poêle avec le beurre.",
-      "Verser les œufs battus.",
-      "Ajouter les rondelles de chèvre avant de plier l'omelette."
-    ]
-  },
-  {
-    "id": 16,
-    "titre": "Steak Haché 5%, Patates Douces au Four",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 20 min",
-    "timerSec": 1200,
-    "timerLabel": "Lancer 20 min",
-    "kcal": 460,
-    "proteines": "38g",
-    "glucides": "40g",
-    "lipides": "12g",
-    "ingredients": [
-      {"nom": "Steak haché 5% MG", "base": 150, "unite": "g"},
-      {"nom": "Patate douce", "base": 200, "unite": "g"},
-      {"nom": "Huile d'olive", "texteFixe": "1 c.à.c Huile d'olive"},
-      {"nom": "Herbes de Provence", "texteFixe": "1 c.à.c Herbes"}
-    ],
-    "instructions": [
-      "Couper la patate douce en frites, assaisonner et enfourner 20 min à 200°C.",
-      "Cuire le steak à la poêle selon la cuisson désirée."
-    ]
-  },
-  {
-    "id": 17,
-    "titre": "Bowl Tofu Mariné & Brocolis Vapeur",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 12 min",
-    "timerSec": 720,
-    "timerLabel": "Lancer 12 min",
-    "kcal": 390,
-    "proteines": "26g",
-    "glucides": "35g",
-    "lipides": "16g",
-    "ingredients": [
-      {"nom": "Tofu ferme", "base": 150, "unite": "g"},
-      {"nom": "Brocolis", "base": 150, "unite": "g"},
-      {"nom": "Riz complet cuit", "base": 120, "unite": "g"},
-      {"nom": "Sauce teriyaki", "texteFixe": "2 c.à.s Sauce Teriyaki"}
-    ],
-    "instructions": [
-      "Cuire les brocolis à la vapeur (10 min).",
-      "Faire poêler le tofu coupé en cubes avec la sauce teriyaki.",
-      "Assembler le bowl avec le riz complet."
-    ]
-  },
-  {
-    "id": 18,
-    "titre": "Crevettes Sautées Ail & Persil",
-    "difficulte": "★★☆☆☆",
-    "temps": "Cuisson: 6 min",
-    "timerSec": 360,
-    "timerLabel": "Lancer 6 min",
-    "kcal": 280,
-    "proteines": "36g",
-    "glucides": "5g",
-    "lipides": "12g",
-    "ingredients": [
-      {"nom": "Crevettes décortiquées", "base": 200, "unite": "g"},
-      {"nom": "Ail haché", "base": 2, "unite": " gousses"},
-      {"nom": "Persil frais", "texteFixe": "2 c.à.s Persil"},
-      {"nom": "Huile d'olive", "texteFixe": "1 c.à.s Huile d'olive"}
-    ],
-    "instructions": [
-      "Saisir l'ail et les crevettes à feu vif dans l'huile d'olive durant 5-6 min.",
-      "Ajouter le persil frais avant de servir."
-    ]
-  },
-  {
-    "id": 19,
-    "titre": "Chili Express au Bœuf & Haricots Rouges",
-    "difficulte": "★★☆☆☆",
-    "temps": "Mijotage: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 490,
-    "proteines": "40g",
-    "glucides": "48g",
-    "lipides": "11g",
-    "ingredients": [
-      {"nom": "Bœuf haché 5%", "base": 120, "unite": "g"},
-      {"nom": "Haricots rouges cuits", "base": 150, "unite": "g"},
-      {"nom": "Purée de tomates", "base": 100, "unite": "g"},
-      {"nom": "Épices Chili", "texteFixe": "1 c.à.c Épices chili"}
-    ],
-    "instructions": [
-      "Faire revenir la viande hachée.",
-      "Ajouter la purée de tomates, les haricots rouges et les épices.",
-      "Laisser mijoter 15 minutes à feu doux."
-    ]
-  },
-  {
-    "id": 20,
-    "titre": "Mousse au Chocolat Protéinée",
-    "difficulte": "★★☆☆☆",
-    "temps": "Repos: 1h min.",
-    "timerSec": 3600,
-    "timerLabel": "Lancer 1 heure",
-    "kcal": 180,
-    "proteines": "15g",
-    "glucides": "12g",
-    "lipides": "6g",
-    "ingredients": [
-      {"nom": "Blancs d'œufs", "base": 3, "unite": " unités"},
-      {"nom": "Chocolat noir 85%", "base": 30, "unite": "g"},
-      {"nom": "Whey Chocolat", "base": 15, "unite": "g"}
-    ],
-    "instructions": [
-      "Faire fondre le chocolat.",
-      "Monter les blancs en neige fermes.",
-      "Incorporer la whey au chocolat fondu puis intégrer délicatement les blancs.",
-      "Réserver 1h au frais."
-    ]
-  },
-  {
-    "id": 21,
-    "titre": "Pavé de Saumon Gratiné & Asperges",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 18 min",
-    "timerSec": 1080,
-    "timerLabel": "Lancer 18 min",
-    "kcal": 580,
-    "proteines": "38g",
-    "glucides": "40g",
-    "lipides": "26g",
-    "ingredients": [
-      {"nom": "Saumon frais", "base": 150, "unite": "g"},
-      {"nom": "Asperges vertes", "base": 100, "unite": "g"},
-      {"nom": "Riz complet", "base": 60, "unite": "g"},
-      {"nom": "Moutarde ancienne", "texteFixe": "1 c.à.s Moutarde"},
-      {"nom": "Sirop d'érable", "texteFixe": "1 c.à.c Sirop d'érable"}
-    ],
-    "instructions": [
-      "Faire cuire le riz complet (25 min).",
-      "Badigeonner le saumon de marinade (moutarde/sirop d'érable).",
-      "Enfourner le saumon et les asperges à 190°C pendant 18 minutes."
-    ]
-  },
-  {
-    "id": 22,
-    "titre": "Curry de Lentilles Corail & Coco",
-    "difficulte": "★★★☆☆",
-    "temps": "Mijotage: 20 min",
-    "timerSec": 1200,
-    "timerLabel": "Lancer 20 min",
-    "kcal": 510,
-    "proteines": "24g",
-    "glucides": "62g",
-    "lipides": "16g",
-    "ingredients": [
-      {"nom": "Lentilles corail", "base": 120, "unite": "g"},
-      {"nom": "Lait de coco léger", "base": 150, "unite": "ml"},
-      {"nom": "Tomates concassées", "base": 200, "unite": "g"},
-      {"nom": "Pâte de curry jaune", "texteFixe": "1 c.à.s Pâte de curry"},
-      {"nom": "Oignon & Ail", "texteFixe": "1/2 Oignon + 1 gousse d'ail"}
-    ],
-    "instructions": [
-      "Faire revenir l'oignon, l'ail et la pâte de curry.",
-      "Ajouter les lentilles, les tomates concassées et le lait de coco.",
-      "Laisser mijoter à couvert pendant 20 minutes."
-    ]
-  },
-  {
-    "id": 23,
-    "titre": "Shakshuka aux Œufs & Féta",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 18 min",
-    "timerSec": 1080,
-    "timerLabel": "Lancer 18 min",
-    "kcal": 410,
-    "proteines": "22g",
-    "glucides": "25g",
-    "lipides": "24g",
-    "ingredients": [
-      {"nom": "Œufs entiers", "base": 2, "unite": " unités"},
-      {"nom": "Poivron rouge coupé", "base": 1, "unite": " unité"},
-      {"nom": "Tomates pelées", "base": 200, "unite": "g"},
-      {"nom": "Féta émiettée", "base": 40, "unite": "g"},
-      {"nom": "Cumin & Paprika", "texteFixe": "1 c.à.c Épices"}
-    ],
-    "instructions": [
-      "Faire cuire les poivrons avec les épices puis ajouter les tomates.",
-      "Creuser deux puits, y casser les œufs et parsemer de féta.",
-      "Couvrir et cuire 8 à 10 minutes à feu doux."
-    ]
-  },
-  {
-    "id": 24,
-    "titre": "Risotto de Sarrasin aux Champignons",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 22 min",
-    "timerSec": 1320,
-    "timerLabel": "Lancer 22 min",
-    "kcal": 430,
-    "proteines": "15g",
-    "glucides": "58g",
-    "lipides": "14g",
-    "ingredients": [
-      {"nom": "Sarrasin décortiqué", "base": 80, "unite": "g"},
-      {"nom": "Champignons de Paris", "base": 150, "unite": "g"},
-      {"nom": "Bouillon de légumes", "base": 300, "unite": "ml"},
-      {"nom": "Parmesan râpé", "base": 20, "unite": "g"}
-    ],
-    "instructions": [
-      "Faire revenir les champignons.",
-      "Ajouter le sarrasin et mouiller progressivement avec le bouillon chaud pendant 20 min.",
-      "Lier avec le parmesan en fin de cuisson."
-    ]
-  },
-  {
-    "id": 25,
-    "titre": "Poke Bowl au Thon Rouge Mariné",
-    "difficulte": "★★★☆☆",
-    "temps": "Marinade: 20 min",
-    "timerSec": 1200,
-    "timerLabel": "Lancer 20 min",
-    "kcal": 530,
-    "proteines": "40g",
-    "glucides": "55g",
-    "lipides": "15g",
-    "ingredients": [
-      {"nom": "Thon rouge frais", "base": 130, "unite": "g"},
-      {"nom": "Riz à sushi cuit", "base": 150, "unite": "g"},
-      {"nom": "Mangue en dés", "base": 50, "unite": "g"},
-      {"nom": "Edamames", "base": 50, "unite": "g"},
-      {"nom": "Sauce Soja & Sésame", "texteFixe": "1 c.à.s Marinade"}
-    ],
-    "instructions": [
-      "Couper le thon en cubes et mariner 20 min dans la sauce soja.",
-      "Dresser le riz tiède et ajouter la mangue, les edamames et le thon mariné."
-    ]
-  },
-  {
-    "id": 26,
-    "titre": "Dinde au Curry & Lait de Coco",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 470,
-    "proteines": "41g",
-    "glucides": "38g",
-    "lipides": "16g",
-    "ingredients": [
-      {"nom": "Escalope de dinde", "base": 150, "unite": "g"},
-      {"nom": "Lait de coco", "base": 100, "unite": "ml"},
-      {"nom": "Courgettes en dés", "base": 150, "unite": "g"},
-      {"nom": "Riz Basmati cuit", "base": 120, "unite": "g"},
-      {"nom": "Curry en poudre", "texteFixe": "1 c.à.s Curry"}
-    ],
-    "instructions": [
-      "Doré la dinde et les courgettes à la poêle.",
-      "Ajouter le curry puis mouiller avec le lait de coco.",
-      "Laisser réduire 10 minutes et servir avec le riz."
-    ]
-  },
-  {
-    "id": 27,
-    "titre": "Filet de Cabillaud en Papillote",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 20 min",
-    "timerSec": 1200,
-    "timerLabel": "Lancer 20 min",
-    "kcal": 310,
-    "proteines": "36g",
-    "glucides": "12g",
-    "lipides": "11g",
-    "ingredients": [
-      {"nom": "Dos de cabillaud", "base": 160, "unite": "g"},
-      {"nom": "Julienne de légumes", "base": 150, "unite": "g"},
-      {"nom": "Huile d'olive & Citron", "texteFixe": "1 c.à.s Marinade"},
-      {"nom": "Aneth fraîche", "texteFixe": "1 brin d'Aneth"}
-    ],
-    "instructions": [
-      "Placer le cabillaud et les légumes sur du papier cuisson.",
-      "Arroser de citron et d'huile d'olive.",
-      "Fermer la papillote et enfourner 20 min à 180°C."
-    ]
-  },
-  {
-    "id": 28,
-    "titre": "Burger Fit au Poulet Grillé",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 10 min",
-    "timerSec": 600,
-    "timerLabel": "Lancer 10 min",
-    "kcal": 490,
-    "proteines": "43g",
-    "glucides": "42g",
-    "lipides": "15g",
-    "ingredients": [
-      {"nom": "Pain Burger complet", "base": 1, "unite": " unité"},
-      {"nom": "Filet de poulet", "base": 130, "unite": "g"},
-      {"nom": "Tranche de cheddar allégé", "base": 1, "unite": " tranche"},
-      {"nom": "Rondelles de tomate & Salade", "base": 40, "unite": "g"}
-    ],
-    "instructions": [
-      "Griller le filet de poulet à la poêle.",
-      "Faire fondre le cheddar sur le poulet chaud.",
-      "Toaster le pain burger et assembler avec la salade et la tomate."
-    ]
-  },
-  {
-    "id": 29,
-    "titre": "Sauté de Bœuf aux Brocolis & Soja",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 10 min",
-    "timerSec": 600,
-    "timerLabel": "Lancer 10 min",
-    "kcal": 420,
-    "proteines": "39g",
-    "glucides": "25g",
-    "lipides": "16g",
-    "ingredients": [
-      {"nom": "Bœuf maigre émincé", "base": 140, "unite": "g"},
-      {"nom": "Fleurettes de brocoli", "base": 180, "unite": "g"},
-      {"nom": "Sauce soja", "texteFixe": "2 c.à.s Sauce soja"},
-      {"nom": "Gingembre râpé", "texteFixe": "1 c.à.c Gingembre"}
-    ],
-    "instructions": [
-      "Saisir le bœuf à feu très vif dans un wok 3 minutes.",
-      "Ajouter les brocolis précuits, le gingembre et la sauce soja.",
-      "Sauter le tout 5 minutes."
-    ]
-  },
-  {
-    "id": 30,
-    "titre": "Wok de Nouilles Sobas aux Légumes",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 12 min",
-    "timerSec": 720,
-    "timerLabel": "Lancer 12 min",
-    "kcal": 440,
-    "proteines": "18g",
-    "glucides": "68g",
-    "lipides": "9g",
-    "ingredients": [
-      {"nom": "Nouilles Soba (Sarrasin)", "base": 80, "unite": "g"},
-      {"nom": "Mélange de légumes wok", "base": 200, "unite": "g"},
-      {"nom": "Sauce soja & Huile de sésame", "texteFixe": "1 c.à.s Assaisonnement"}
-    ],
-    "instructions": [
-      "Cuire les nouilles soba 5 minutes à l'eau bouillante.",
-      "Faire sauter les légumes dans un wok chaud.",
-      "Mélanger les nouilles et la sauce avec les légumes pendant 3 minutes."
-    ]
-  },
-  {
-    "id": 31,
-    "titre": "Dahl de Lentilles Blondes au Curcuma",
-    "difficulte": "★★★☆☆",
-    "temps": "Mijotage: 25 min",
-    "timerSec": 1500,
-    "timerLabel": "Lancer 25 min",
-    "kcal": 460,
-    "proteines": "22g",
-    "glucides": "64g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Lentilles blondes", "base": 100, "unite": "g"},
-      {"nom": "Tomates concassées", "base": 150, "unite": "g"},
-      {"nom": "Curcuma & Cumin", "texteFixe": "1 c.à.s Épices"},
-      {"nom": "Coriandre fraîche", "texteFixe": "1 poignée Coriandre"}
-    ],
-    "instructions": [
-      "Rincer les lentilles.",
-      "Cuire avec les tomates, 300ml d'eau et les épices pendant 25 minutes.",
-      "Parsemer de coriandre fraîche avant de déguster."
-    ]
-  },
-  {
-    "id": 32,
-    "titre": "Lasagnes Légères Courgettes & Ricotta",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 30 min",
-    "timerSec": 1800,
-    "timerLabel": "Lancer 30 min",
-    "kcal": 410,
-    "proteines": "25g",
-    "glucides": "32g",
-    "lipides": "18g",
-    "ingredients": [
-      {"nom": "Courgettes en lamelles", "base": 200, "unite": "g"},
-      {"nom": "Plaques de lasagne", "base": 3, "unite": " plaques"},
-      {"nom": "Ricotta allégée", "base": 80, "unite": "g"},
-      {"nom": "Sauce tomate maison", "base": 150, "unite": "g"}
-    ],
-    "instructions": [
-      "Alterner les plaques, la sauce tomate, les lamelles de courgettes et la ricotta.",
-      "Terminer par un peu de ricotta sur le dessus.",
-      "Enfourner 30 min à 180°C."
-    ]
-  },
-  {
-    "id": 33,
-    "titre": "Brochettes de Poulet Mariné & Poivrons",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 360,
-    "proteines": "42g",
-    "glucides": "12g",
-    "lipides": "14g",
-    "ingredients": [
-      {"nom": "Blanc de poulet", "base": 160, "unite": "g"},
-      {"nom": "Poivron vert & rouge", "base": 100, "unite": "g"},
-      {"nom": "Jus de citron & Origan", "texteFixe": "1 c.à.s Marinade"}
-    ],
-    "instructions": [
-      "Couper le poulet et les poivrons en gros cubes.",
-      "Monter les brochettes et mariner 15 minutes dans le citron.",
-      "Griller au four ou au barbecue pendant 15 minutes."
-    ]
-  },
-  {
-    "id": 34,
-    "titre": "Tartare de Thon & Avocat au Lime",
-    "difficulte": "★★★☆☆",
-    "temps": "Préparation: 15 min",
-    "kcal": 390,
-    "proteines": "34g",
-    "glucides": "8g",
-    "lipides": "23g",
-    "ingredients": [
-      {"nom": "Thon frais qualité sashimi", "base": 140, "unite": "g"},
-      {"nom": "Avocat mûr", "base": 0.5, "unite": " portion"},
-      {"nom": "Jus de lime & Ciboulette", "texteFixe": "1 c.à.s Assaisonnement"},
-      {"nom": "Huile de sésame", "texteFixe": "1 c.à.c Huile"}
-    ],
-    "instructions": [
-      "Couper le thon et l'avocat en petits dés réguliers.",
-      "Mélanger délicatement avec le jus de lime, l'huile et la ciboulette.",
-      "Dresser dans un emporte-pièce."
-    ]
-  },
-  {
-    "id": 35,
-    "titre": "Gaufres Protéinées Avoine & Pépites",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 5 min",
-    "timerSec": 300,
-    "timerLabel": "Lancer 5 min",
-    "kcal": 380,
-    "proteines": "26g",
-    "glucides": "44g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Farine d'avoine", "base": 50, "unite": "g"},
-      {"nom": "Whey protéine", "base": 20, "unite": "g"},
-      {"nom": "Blanc d'œuf", "base": 2, "unite": " unités"},
-      {"nom": "Pépites de chocolat noir", "base": 10, "unite": "g"}
-    ],
-    "instructions": [
-      "Mélanger la farine, la whey et les blancs d'œufs pour former une pâte homogène.",
-      "Ajouter les pépites de chocolat.",
-      "Cuire 5 minutes dans un gaufrier bien chaud."
-    ]
-  },
-  {
-    "id": 36,
-    "titre": "Tartine de Burrata & Tomates Rôties",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 450,
-    "proteines": "18g",
-    "glucides": "35g",
-    "lipides": "25g",
-    "ingredients": [
-      {"nom": "Pain de campagne", "base": 1, "unite": " grande tranche"},
-      {"nom": "Mini Burrata", "base": 60, "unite": "g"},
-      {"nom": "Tomates cerises", "base": 120, "unite": "g"},
-      {"nom": "Huile d'olive & Basilic", "texteFixe": "1 c.à.s Assaisonnement"}
-    ],
-    "instructions": [
-      "Rôtir les tomates cerises 15 min au four à 200°C avec l'huile d'olive.",
-      "Griller la tranche de pain.",
-      "Déposer la burrata ouverte et recouvrir des tomates rôties chaudes."
-    ]
-  },
-  {
-    "id": 37,
-    "titre": "Salade Niçoise au Thon Frais Snacké",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 10 min",
-    "timerSec": 600,
-    "timerLabel": "Lancer 10 min",
-    "kcal": 470,
-    "proteines": "41g",
-    "glucides": "20g",
-    "lipides": "22g",
-    "ingredients": [
-      {"nom": "Steak de thon frais", "base": 130, "unite": "g"},
-      {"nom": "Haricots verts cuits", "base": 100, "unite": "g"},
-      {"nom": "Œuf dur", "base": 1, "unite": " unité"},
-      {"nom": "Olives noires", "base": 20, "unite": "g"}
-    ],
-    "instructions": [
-      "Snacker le steak de thon 1 minute par face à feu vif.",
-      "Mélanger les haricots verts, l'œuf coupé en quartier et les olives.",
-      "Trancher le thon et le déposer sur la salade."
-    ]
-  },
-  {
-    "id": 38,
-    "titre": "Curry de Crevettes à la Mangue",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 12 min",
-    "timerSec": 720,
-    "timerLabel": "Lancer 12 min",
-    "kcal": 410,
-    "proteines": "32g",
-    "glucides": "45g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Crevettes", "base": 160, "unite": "g"},
-      {"nom": "Dés de mangue", "base": 80, "unite": "g"},
-      {"nom": "Lait de coco basax", "base": 100, "unite": "ml"},
-      {"nom": "Pâte de curry rouge", "texteFixe": "1 c.à.c Curry"}
-    ],
-    "instructions": [
-      "Faire sauter les crevettes avec la pâte de curry.",
-      "Ajouter le lait de coco et la mangue.",
-      "Laisser mijoter 8 minutes jusqu'à épaississement."
-    ]
-  },
-  {
-    "id": 39,
-    "titre": "Filet Mignon de Porc aux Pommes",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 25 min",
-    "timerSec": 1500,
-    "timerLabel": "Lancer 25 min",
-    "kcal": 430,
-    "proteines": "42g",
-    "glucides": "28g",
-    "lipides": "13g",
-    "ingredients": [
-      {"nom": "Filet mignon de porc", "base": 160, "unite": "g"},
-      {"nom": "Pomme en quartiers", "base": 1, "unite": " unité"},
-      {"nom": "Moutarde à l'ancienne", "texteFixe": "1 c.à.s Moutarde"},
-      {"nom": "Cidre brut", "base": 50, "unite": "ml"}
-    ],
-    "instructions": [
-      "Doré les médaillons de porc à la poêle.",
-      "Ajouter les pommes, la moutarde et déglacer au cidre.",
-      "Couvrir et cuire 20 minutes à feu doux."
-    ]
-  },
-  {
-    "id": 40,
-    "titre": "Bowl Falafels Maison & Hummus",
-    "difficulte": "★★★☆☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 530,
-    "proteines": "21g",
-    "glucides": "65g",
-    "lipides": "20g",
-    "ingredients": [
-      {"nom": "Pois chiches cuits", "base": 150, "unite": "g"},
-      {"nom": "Hummus", "base": 40, "unite": "g"},
-      {"nom": "Coriandre & Cumin", "texteFixe": "1 c.à.s Épices"},
-      {"nom": "Taboulé de persil", "base": 80, "unite": "g"}
-    ],
-    "instructions": [
-      "Mixer les pois chiches avec les épices et former des boules.",
-      "Cuire les falafels au four 15 min à 200°C.",
-      "Servir avec le taboulé et le hummus."
-    ]
-  },
-  {
-    "id": 41,
-    "titre": "Magret de Canard Rôti au Miel",
-    "difficulte": "★★★★☆",
-    "temps": "Cuisson: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 590,
-    "proteines": "38g",
-    "glucides": "18g",
-    "lipides": "38g",
-    "ingredients": [
-      {"nom": "Magret de canard", "base": 180, "unite": "g"},
-      {"nom": "Miel de fleurs", "texteFixe": "1 c.à.s Miel"},
-      {"nom": "Vinaigre balsamique", "texteFixe": "1 c.à.s Vinaigre"},
-      {"nom": "Purée de céleri", "base": 150, "unite": "g"}
-    ],
-    "instructions": [
-      "Quadriller le gras du magret et cuire côté peau 8 min à feu moyen.",
-      "Jeter le gras, retourner et cuire 4 min.",
-      "Déglacer la poêle au miel et vinaigre balsamique pour créer une sauce."
-    ]
-  },
-  {
-    "id": 42,
-    "titre": "Risotto aux Saint-Jacques & Safran",
-    "difficulte": "★★★★☆",
-    "temps": "Cuisson: 25 min",
-    "timerSec": 1500,
-    "timerLabel": "Lancer 25 min",
-    "kcal": 510,
-    "proteines": "32g",
-    "glucides": "60g",
-    "lipides": "12g",
-    "ingredients": [
-      {"nom": "Noix de Saint-Jacques", "base": 120, "unite": "g"},
-      {"nom": "Riz Arborio", "base": 70, "unite": "g"},
-      {"nom": "Safran en pistils", "texteFixe": "1 pincée Safran"},
-      {"nom": "Vin blanc sec", "base": 40, "unite": "ml"}
-    ],
-    "instructions": [
-      "Nacrer le riz puis déglacer au vin blanc.",
-      "Mouiller au bouillon safrané jusqu'à cuisson complète du risotto.",
-      "Snacker les Saint-Jacques 1 minute par face et les déposer au-dessus."
-    ]
-  },
-  {
-    "id": 43,
-    "titre": "Râble de Lapin aux Herbes & Moutarde",
-    "difficulte": "★★★★☆",
-    "temps": "Cuisson: 35 min",
-    "timerSec": 2100,
-    "timerLabel": "Lancer 35 min",
-    "kcal": 420,
-    "proteines": "46g",
-    "glucides": "8g",
-    "lipides": "20g",
-    "ingredients": [
-      {"nom": "Râble de lapin", "base": 180, "unite": "g"},
-      {"nom": "Moutarde fort", "texteFixe": "1 c.à.s Moutarde"},
-      {"nom": "Thym & Romarin", "texteFixe": "Herbes fraîches"},
-      {"nom": "Vin blanc", "base": 50, "unite": "ml"}
-    ],
-    "instructions": [
-      "Badigeonner le lapin de moutarde.",
-      "Faire dorer dans une cocotte puis mouiller au vin blanc.",
-      "Couvrir et laisser mijoter 30 minutes à feu doux."
-    ]
-  },
-  {
-    "id": 44,
-    "titre": "Tartare de Bœuf Coupé au Couteau",
-    "difficulte": "★★★★☆",
-    "temps": "Préparation: 20 min",
-    "kcal": 410,
-    "proteines": "42g",
-    "glucides": "5g",
-    "lipides": "24g",
-    "ingredients": [
-      {"nom": "Filet de bœuf très frais", "base": 180, "unite": "g"},
-      {"nom": "Jaune d'œuf", "base": 1, "unite": " unité"},
-      {"nom": "Câpres & Ciselets", "texteFixe": "1 c.à.s Mélange"},
-      {"nom": "Sauce Worcestershire", "texteFixe": "1 c.à.c Sauce"}
-    ],
-    "instructions": [
-      "Hacher le filet de bœuf au couteau en tout petits cubes.",
-      "Mélanger délicatement avec le jaune d'œuf, les câpres et la sauce.",
-      "Servir bien frais."
-    ]
-  },
-  {
-    "id": 45,
-    "titre": "Tataki de Thon Sésame & Ginger",
-    "difficulte": "★★★★☆",
-    "temps": "Cuisson: 2 min",
-    "timerSec": 120,
-    "timerLabel": "Lancer 2 min",
-    "kcal": 380,
-    "proteines": "44g",
-    "glucides": "10g",
-    "lipides": "18g",
-    "ingredients": [
-      {"nom": "Pavé de thon épais", "base": 160, "unite": "g"},
-      {"nom": "Graines de sésame", "base": 20, "unite": "g"},
-      {"nom": "Sauce Ponzu", "texteFixe": "2 c.à.s Sauce"},
-      {"nom": "Gingembre marinés", "base": 15, "unite": "g"}
-    ],
-    "instructions": [
-      "Enrober le thon de graines de sésame.",
-      "Saisir dans une poêle très chaude 30 secondes par face.",
-      "Trancher finement et arroser de sauce Ponzu."
-    ]
-  },
-  {
-    "id": 46,
-    "titre": "Ceviche de Daurade au Citron Vert & Passion",
-    "difficulte": "★★★★☆",
-    "temps": "Marinade: 15 min",
-    "timerSec": 900,
-    "timerLabel": "Lancer 15 min",
-    "kcal": 290,
-    "proteines": "35g",
-    "glucides": "14g",
-    "lipides": "10g",
-    "ingredients": [
-      {"nom": "Filet de daurade ultra frais", "base": 160, "unite": "g"},
-      {"nom": "Citrons verts (jus)", "base": 2, "unite": " unités"},
-      {"nom": "Fruit de la passion", "base": 0.5, "unite": " portion"},
-      {"nom": "Oignon rouge émincé", "base": 20, "unite": "g"}
-    ],
-    "instructions": [
-      "Tailler le poisson en dés.",
-      "Couvrir du jus de citron vert et du fruit de la passion.",
-      "Laisser « cuire » au frais par l'acidité durant 15 minutes."
-    ]
-  },
-  {
-    "id": 47,
-    "titre": "Ballotine de Poulet Farcie aux Champignons",
-    "difficulte": "★★★★☆",
-    "temps": "Cuisson: 25 min",
-    "timerSec": 1500,
-    "timerLabel": "Lancer 25 min",
-    "kcal": 420,
-    "proteines": "46g",
-    "glucides": "6g",
-    "lipides": "22g",
-    "ingredients": [
-      {"nom": "Suprême de poulet", "base": 160, "unite": "g"},
-      {"nom": "Duxelles de champignons", "base": 80, "unite": "g"},
-      {"nom": "Film étirable thermorésistant", "texteFixe": "Pour la cuisson"},
-      {"nom": "Beurre d'herbes", "base": 10, "unite": "g"}
-    ],
-    "instructions": [
-      "Ouvrir le poulet en portefeuille et garnir de champignons.",
-      "Rouler très serré dans du film étirable pour former un boudin.",
-      "Pocher 20 min dans l'eau frémissante puis poêler au beurre."
-    ]
-  },
-  {
-    "id": 48,
-    "titre": "Poule au Pot Individuelle & Légumes Oubliés",
-    "difficulte": "★★★★★",
-    "temps": "Mijotage: 45 min",
-    "timerSec": 2700,
-    "timerLabel": "Lancer 45 min",
-    "kcal": 480,
-    "proteines": "45g",
-    "glucides": "30g",
-    "lipides": "18g",
-    "ingredients": [
-      {"nom": "Cuisse de poulet fermier", "base": 180, "unite": "g"},
-      {"nom": "Panas & Navet", "base": 120, "unite": "g"},
-      {"nom": "Carotte & Poireau", "base": 100, "unite": "g"},
-      {"nom": "Bouillon aromatique", "base": 400, "unite": "ml"}
-    ],
-    "instructions": [
-      "Plonger le poulet et les légumes coupés dans le bouillon aromatisé.",
-      "Laisser mijoter à feu très doux pendant 45 minutes.",
-      "Servir chaud avec une pointe de gros sel."
-    ]
-  },
-  {
-    "id": 49,
-    "titre": "Souris d'Agneau Confite au Romarin",
-    "difficulte": "★★★★★",
-    "temps": "Mijotage: 2h30",
-    "timerSec": 9000,
-    "timerLabel": "Lancer 2h30",
-    "kcal": 650,
-    "proteines": "52g",
-    "glucides": "15g",
-    "lipides": "42g",
-    "ingredients": [
-      {"nom": "Souris d'agneau", "base": 250, "unite": "g"},
-      {"nom": "Gousses d'ail en chemise", "base": 4, "unite": " unités"},
-      {"nom": "Branche de romarin", "texteFixe": "2 branches"},
-      {"nom": "Miel & Jus de viande", "texteFixe": "1 c.à.s Nappage"}
-    ],
-    "instructions": [
-      "Saisir l'agneau dans une cocotte.",
-      "Ajouter l'ail, le romarin et le fond de veau.",
-      "Enfourner à couvert à 150°C pendant 2h30 en arrosant régulièrement."
-    ]
-  },
-  {
-    "id": 50,
-    "titre": "Boeuf Bourguignon Allégé au Vin Rouge",
-    "difficulte": "★★★★★",
-    "temps": "Mijotage: 2h",
-    "timerSec": 7200,
-    "timerLabel": "Lancer 2 heures",
-    "kcal": 560,
-    "proteines": "48g",
-    "glucides": "22g",
-    "lipides": "24g",
-    "ingredients": [
-      {"nom": "Paleron de bœuf maigre", "base": 180, "unite": "g"},
-      {"nom": "Carottes en rondelles", "base": 100, "unite": "g"},
-      {"nom": "Vin rouge de Bourgogne", "base": 150, "unite": "ml"},
-      {"nom": "Bouillon de bœuf", "base": 150, "unite": "ml"},
-      {"nom": "Bouquet garni", "texteFixe": "1 unité"}
-    ],
-    "instructions": [
-      "Faire revenir les morceaux de bœuf.",
-      "Singorer légèrement avec une cuillère de farine.",
-      "Mouiller avec le vin rouge et le bouillon, ajouter les carottes.",
-      "Laisser confire à feu doux pendant au moins 2 heures."
-    ]
+    "title": "Bowl Crémeux Skyr & Beurre de Cacahuète",
+    "type": "dessert",
+    "ing": ["Skyr", "Beurre de cacahuète", "Flocons d'avoine"],
+    "emoji": "🥣",
+    "rating": 5,
+    "prot": 26,
+    "carbs": 30,
+    "fat": 11,
+    "cal": 320,
+    "prep": 4,
+    "cook": 0,
+    "rest": 0,
+    "ingredients": ["200g de Skyr", "20g de beurre de cacahuète", "30g de flocons d'avoine"],
+    "instructions": ["Verse le Skyr au fond d'un bol.", "Ajoute les flocons d'avoine au-dessus.", "Nappe le tout avec le beurre de cacahuète légèrement fondu."]
   }
 ]
