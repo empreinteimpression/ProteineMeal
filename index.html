@@ -26,10 +26,7 @@
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-        }
+        .container { max-width: 850px; margin: 0 auto; }
 
         header {
             background: linear-gradient(135deg, #1f1411 0%, #3a2822 100%);
@@ -40,10 +37,7 @@
             margin-bottom: 25px;
         }
 
-        header h1 {
-            margin: 0 0 10px 0;
-            color: #f7d6c8;
-        }
+        header h1 { margin: 0 0 10px 0; color: #f7d6c8; }
 
         .legend {
             background-color: #231815;
@@ -55,7 +49,6 @@
             color: #e2c0b2;
         }
 
-        /* Panel d'outils interactifs */
         .interactive-panel {
             background-color: #382721;
             border: 1px solid #543b32;
@@ -67,11 +60,7 @@
             gap: 15px;
         }
 
-        @media (max-width: 600px) {
-            .interactive-panel {
-                grid-template-columns: 1fr;
-            }
-        }
+        @media (max-width: 600px) { .interactive-panel { grid-template-columns: 1fr; } }
 
         .panel-group label {
             display: block;
@@ -91,7 +80,6 @@
             box-sizing: border-box;
         }
 
-        /* Cartes de recettes */
         .recipe-card {
             background-color: var(--card-bg);
             border: 1px solid #4a342c;
@@ -110,25 +98,10 @@
             border-bottom: 1px solid #543b32;
         }
 
-        .recipe-header h2 {
-            margin: 0;
-            font-size: 1.3em;
-            color: #f7d6c8;
-        }
-
-        .recipe-meta {
-            text-align: right;
-            font-size: 0.85em;
-            color: var(--text-muted);
-        }
-
-        .stars {
-            color: #f39c12;
-        }
-
-        .recipe-body {
-            padding: 20px;
-        }
+        .recipe-header h2 { margin: 0; font-size: 1.3em; color: #f7d6c8; }
+        .recipe-meta { text-align: right; font-size: 0.85em; color: var(--text-muted); }
+        .stars { color: #f39c12; }
+        .recipe-body { padding: 20px; }
 
         .macros-grid {
             display: grid;
@@ -141,16 +114,8 @@
             margin-bottom: 15px;
         }
 
-        .macro-val {
-            display: block;
-            font-weight: bold;
-            color: #f7d6c8;
-        }
-
-        .macro-label {
-            font-size: 0.75em;
-            color: var(--text-muted);
-        }
+        .macro-val { display: block; font-weight: bold; color: #f7d6c8; }
+        .macro-label { font-size: 0.75em; color: var(--text-muted); }
 
         .section-title {
             font-size: 0.95em;
@@ -161,13 +126,7 @@
             margin: 15px 0 10px 0;
         }
 
-        /* Ingrédients : Fond clair et texte foncé */
-        .ingredients-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
+        .ingredients-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px; }
 
         .ingredient-badge {
             background-color: var(--badge-bg);
@@ -178,17 +137,13 @@
             font-size: 0.85em;
         }
 
-        .ingredient-badge .qty {
-            color: #b84a00;
-            font-weight: bold;
-        }
+        .ingredient-badge .qty { color: #b84a00; font-weight: bold; }
 
         .custom-tag {
             background-color: #e8cca4 !important;
             border: 1px dashed #b84a00;
         }
 
-        /* Minuteur */
         .timer-container {
             background-color: #231815;
             border: 1px dashed var(--accent-color);
@@ -210,11 +165,8 @@
             font-weight: bold;
         }
 
-        .timer-btn:hover {
-            background-color: #be6123;
-        }
+        .timer-btn:hover { background-color: #be6123; }
 
-        /* Amazon Section */
         .amazon-box {
             background-color: #281c18;
             padding: 12px 20px;
@@ -222,27 +174,14 @@
             font-size: 0.85em;
         }
 
-        .amazon-box strong {
-            color: var(--amazon-gold);
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .amazon-link {
-            color: #f7d6c8;
-            margin-right: 15px;
-            text-decoration: underline;
-        }
-
-        .amazon-link:hover {
-            color: var(--amazon-gold);
-        }
+        .amazon-box strong { color: var(--amazon-gold); display: block; margin-bottom: 5px; }
+        .amazon-link { color: #f7d6c8; margin-right: 15px; text-decoration: underline; }
+        .amazon-link:hover { color: var(--amazon-gold); }
     </style>
 </head>
 <body>
 
 <div class="container">
-
     <header>
         <h1>RECETTES FIT & GOURMET</h1>
         <p>Alimentation protéinée & Outils interactifs</p>
@@ -251,7 +190,6 @@
         </div>
     </header>
 
-    <!-- Panneau de Contrôle -->
     <div class="interactive-panel">
         <div class="panel-group">
             <label for="portionSelect">👤 Nombre de personnes :</label>
@@ -267,216 +205,75 @@
         </div>
     </div>
 
-    <!-- Recette 1 -->
-    <div class="recipe-card">
-        <div class="recipe-header">
-            <h2>1. Bowl Poulet, Avocat & Riz Basmati</h2>
-            <div class="recipe-meta">
-                <span class="stars">★★☆☆☆</span><br>
-                <span>Cuisson: 15 min</span>
-            </div>
-        </div>
-        <div class="recipe-body">
-            <div class="macros-grid">
-                <div><span class="macro-val">480</span><span class="macro-label">kcal</span></div>
-                <div><span class="macro-val">42g</span><span class="macro-label">Protéines</span></div>
-                <div><span class="macro-val">45g</span><span class="macro-label">Glucides</span></div>
-                <div><span class="macro-val">14g</span><span class="macro-label">Lipides</span></div>
-            </div>
-            <div class="section-title">Ingrédients</div>
-            <div class="ingredients-list">
-                <span class="ingredient-badge"><span class="qty" data-base="150">150</span>g Blanc de poulet</span>
-                <span class="ingredient-badge"><span class="qty" data-base="60">60</span>g Riz basmati (cru)</span>
-                <span class="ingredient-badge"><span class="qty" data-base="0.5">1/2</span> Avocat mûr</span>
-                <span class="ingredient-badge">1 c.à.s Huile d'olive</span>
-                <span class="ingredient-badge">Paprika & Herbes</span>
-            </div>
-            <div class="section-title">Instructions</div>
-            <ol>
-                <li>Faire cuire le riz basmati dans l'eau bouillante (12 min).</li>
-                <li>Assaisonner le poulet coupé en dés.</li>
-                <li>Cuire le poulet à la poêle à feu moyen pendant <strong>15 minutes</strong>.</li>
-                <li>Dresser avec l'avocat en tranches.</li>
-            </ol>
-            <div class="timer-container">
-                <span>⏱️ Minuteur de cuisson : <strong>15:00</strong></span>
-                <button class="timer-btn" onclick="startTimer(this, 900)">Lancer 15 min</button>
-            </div>
-        </div>
-        <div class="amazon-box">
-            <strong>🛒 Matériel & Produits Recommandés :</strong>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B000BGS93K?tag=cupgour-21">Balance de précision</a>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B0733B1S8P?tag=cupgour-21">Riz Basmati Bio 1kg</a>
-        </div>
-    </div>
-
-    <!-- Recette 2 -->
-    <div class="recipe-card">
-        <div class="recipe-header">
-            <h2>2. Pudding Chia aux Fruits Rouges</h2>
-            <div class="recipe-meta">
-                <span class="stars">★☆☆☆☆</span><br>
-                <span>Repos: 30 min min.</span>
-            </div>
-        </div>
-        <div class="recipe-body">
-            <div class="macros-grid">
-                <div><span class="macro-val">290</span><span class="macro-label">kcal</span></div>
-                <div><span class="macro-val">12g</span><span class="macro-label">Protéines</span></div>
-                <div><span class="macro-val">28g</span><span class="macro-label">Glucides</span></div>
-                <div><span class="macro-val">11g</span><span class="macro-label">Lipides</span></div>
-            </div>
-            <div class="section-title">Ingrédients</div>
-            <div class="ingredients-list">
-                <span class="ingredient-badge"><span class="qty" data-base="30">30</span>g Graines de chia</span>
-                <span class="ingredient-badge"><span class="qty" data-base="200">200</span>ml Lait d'amande</span>
-                <span class="ingredient-badge">1 c.à.s Sirop d'agave</span>
-                <span class="ingredient-badge"><span class="qty" data-base="80">80</span>g Fruits rouges</span>
-            </div>
-            <div class="section-title">Instructions</div>
-            <ol>
-                <li>Mélanger les graines de chia, le lait et le sirop d'agave dans un pot.</li>
-                <li>Fouetter 1 minute.</li>
-                <li><strong>Repos obligatoire :</strong> Laisser au frais <strong>30 minutes minimum</strong> pour gélification.</li>
-                <li>Ajouter les fruits rouges au moment de servir.</li>
-            </ol>
-            <div class="timer-container">
-                <span>⏱️ Minuteur de repos : <strong>30:00</strong></span>
-                <button class="timer-btn" onclick="startTimer(this, 1800)">Lancer 30 min</button>
-            </div>
-        </div>
-        <div class="amazon-box">
-            <strong>🛒 Matériel & Produits Recommandés :</strong>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B01BML3DGG?tag=cupgour-21">Graines de Chia Bio 1kg</a>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B076595G2R?tag=cupgour-21">Pots Mason Jars</a>
-        </div>
-    </div>
-
-    <!-- Recette 3 -->
-    <div class="recipe-card">
-        <div class="recipe-header">
-            <h2>3. Pavé de Saumon Gratiné & Asperges</h2>
-            <div class="recipe-meta">
-                <span class="stars">★★★☆☆</span><br>
-                <span>Cuisson: 18 min</span>
-            </div>
-        </div>
-        <div class="recipe-body">
-            <div class="macros-grid">
-                <div><span class="macro-val">580</span><span class="macro-label">kcal</span></div>
-                <div><span class="macro-val">38g</span><span class="macro-label">Protéines</span></div>
-                <div><span class="macro-val">40g</span><span class="macro-label">Glucides</span></div>
-                <div><span class="macro-val">26g</span><span class="macro-label">Lipides</span></div>
-            </div>
-            <div class="section-title">Ingrédients</div>
-            <div class="ingredients-list">
-                <span class="ingredient-badge"><span class="qty" data-base="150">150</span>g Saumon frais</span>
-                <span class="ingredient-badge"><span class="qty" data-base="100">100</span>g Asperges vertes</span>
-                <span class="ingredient-badge"><span class="qty" data-base="60">60</span>g Riz complet</span>
-                <span class="ingredient-badge">Moutarde ancienne & Sirop d'érable</span>
-            </div>
-            <div class="section-title">Instructions</div>
-            <ol>
-                <li>Faire cuire le riz complet (25 min).</li>
-                <li>Badigeonner le saumon de marinade (moutarde/sirop d'érable/soja).</li>
-                <li>Enfourner le saumon et les asperges à 190°C pendant <strong>18 minutes</strong>.</li>
-            </ol>
-            <div class="timer-container">
-                <span>⏱️ Minuteur au four : <strong>18:00</strong></span>
-                <button class="timer-btn" onclick="startTimer(this, 1080)">Lancer 18 min</button>
-            </div>
-        </div>
-        <div class="amazon-box">
-            <strong>🛒 Matériel & Produits Recommandés :</strong>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B07N8QGHRG?tag=cupgour-21">Airfryer / Four Chaleur Tournante</a>
-        </div>
-    </div>
-
-    <!-- Recette 4 -->
-    <div class="recipe-card">
-        <div class="recipe-header">
-            <h2>4. Pancakes Protéinés Banane & Avoine</h2>
-            <div class="recipe-meta">
-                <span class="stars">★★☆☆☆</span><br>
-                <span>Cuisson: 2 min/face</span>
-            </div>
-        </div>
-        <div class="recipe-body">
-            <div class="macros-grid">
-                <div><span class="macro-val">410</span><span class="macro-label">kcal</span></div>
-                <div><span class="macro-val">30g</span><span class="macro-label">Protéines</span></div>
-                <div><span class="macro-val">52g</span><span class="macro-label">Glucides</span></div>
-                <div><span class="macro-val">8g</span><span class="macro-label">Lipides</span></div>
-            </div>
-            <div class="section-title">Ingrédients</div>
-            <div class="ingredients-list">
-                <span class="ingredient-badge"><span class="qty" data-base="1">1</span> Banane mûre</span>
-                <span class="ingredient-badge"><span class="qty" data-base="60">60</span>g Flocons d'avoine</span>
-                <span class="ingredient-badge"><span class="qty" data-base="2">2</span> Œufs entiers</span>
-                <span class="ingredient-badge"><span class="qty" data-base="30">30</span>g Whey Vanille</span>
-            </div>
-            <div class="section-title">Instructions</div>
-            <ol>
-                <li>Mixer tous les ingrédients dans un blender.</li>
-                <li>Cuire dans une poêle chaudes environ <strong>2 minutes par face</strong>.</li>
-            </ol>
-            <div class="timer-container">
-                <span>⏱️ Minuteur poêle : <strong>02:00</strong></span>
-                <button class="timer-btn" onclick="startTimer(this, 120)">Lancer 2 min</button>
-            </div>
-        </div>
-        <div class="amazon-box">
-            <strong>🛒 Matériel & Produits Recommandés :</strong>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B00S3332S6?tag=cupgour-21">Blender Nutribullet</a>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B08HR38S33?tag=cupgour-21">Poêle à Pancakes</a>
-        </div>
-    </div>
-
-    <!-- Recette 5 -->
-    <div class="recipe-card">
-        <div class="recipe-header">
-            <h2>5. Curry de Lentilles Corail & Coco</h2>
-            <div class="recipe-meta">
-                <span class="stars">★★★☆☆</span><br>
-                <span>Mijotage: 20 min</span>
-            </div>
-        </div>
-        <div class="recipe-body">
-            <div class="macros-grid">
-                <div><span class="macro-val">510</span><span class="macro-label">kcal</span></div>
-                <div><span class="macro-val">24g</span><span class="macro-label">Protéines</span></div>
-                <div><span class="macro-val">62g</span><span class="macro-label">Glucides</span></div>
-                <div><span class="macro-val">16g</span><span class="macro-label">Lipides</span></div>
-            </div>
-            <div class="section-title">Ingrédients</div>
-            <div class="ingredients-list">
-                <span class="ingredient-badge"><span class="qty" data-base="120">120</span>g Lentilles corail</span>
-                <span class="ingredient-badge"><span class="qty" data-base="150">150</span>ml Lait de coco</span>
-                <span class="ingredient-badge"><span class="qty" data-base="200">200</span>g Tomates concassées</span>
-                <span class="ingredient-badge">Ail, Oignon, Pâte de curry</span>
-            </div>
-            <div class="section-title">Instructions</div>
-            <ol>
-                <li>Faire revenir l'oignon, l'ail et la pâte de curry.</li>
-                <li>Ajouter les lentilles, les tomates concassées et le lait de coco.</li>
-                <li>Laisser mijoter à couvert pendant <strong>20 minutes</strong>.</li>
-            </ol>
-            <div class="timer-container">
-                <span>⏱️ Minuteur mijotage : <strong>20:00</strong></span>
-                <button class="timer-btn" onclick="startTimer(this, 1200)">Lancer 20 min</button>
-            </div>
-        </div>
-        <div class="amazon-box">
-            <strong>🛒 Matériel & Produits Recommandés :</strong>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B00004SBIB?tag=cupgour-21">Sauteuse en Fonte</a>
-            <a class="amazon-link" target="_blank" href="https://www.amazon.fr/dp/B07YXYJ82R?tag=cupgour-21">Lentilles Corail Bio 1kg</a>
-        </div>
-    </div>
-
+    <!-- Zone d'affichage dynamique des recettes -->
+    <div id="recipesContainer"></div>
 </div>
 
 <script>
-    // Ajustement automatique des portions
+    let recipesData = [];
+
+    // Chargement du fichier JSON
+    fetch('recettes.json')
+        .then(response => response.json())
+        .then(data => {
+            recipesData = data;
+            renderRecipes(recipesData);
+        })
+        .catch(error => console.error("Erreur de chargement des recettes :", error));
+
+    function renderRecipes(recipes) {
+        const container = document.getElementById('recipesContainer');
+        container.innerHTML = '';
+
+        recipes.forEach(r => {
+            let ingredientsHTML = r.ingredients.map(ing => {
+                if(ing.texteFixe) {
+                    return `<span class="ingredient-badge">${ing.texteFixe}</span>`;
+                }
+                return `<span class="ingredient-badge"><span class="qty" data-base="${ing.base}">${ing.base}</span>${ing.unite} ${ing.nom}</span>`;
+            }).join('');
+
+            let instructionsHTML = r.instructions.map(inst => `<li>${inst}</li>`).join('');
+
+            let amazonHTML = r.amazon ? r.amazon.map(a => `<a class="amazon-link" target="_blank" href="${a.url}">${a.texte}</a>`).join('') : '';
+
+            const card = document.createElement('div');
+            card.className = 'recipe-card';
+            card.innerHTML = `
+                <div class="recipe-header">
+                    <h2>${r.id}. ${r.titre}</h2>
+                    <div class="recipe-meta">
+                        <span class="stars">${r.difficulte}</span><br>
+                        <span>${r.temps}</span>
+                    </div>
+                </div>
+                <div class="recipe-body">
+                    <div class="macros-grid">
+                        <div><span class="macro-val">${r.kcal}</span><span class="macro-label">kcal</span></div>
+                        <div><span class="macro-val">${r.proteines}</span><span class="macro-label">Protéines</span></div>
+                        <div><span class="macro-val">${r.glucides}</span><span class="macro-label">Glucides</span></div>
+                        <div><span class="macro-val">${r.lipides}</span><span class="macro-label">Lipides</span></div>
+                    </div>
+                    <div class="section-title">Ingrédients</div>
+                    <div class="ingredients-list">${ingredientsHTML}</div>
+                    <div class="section-title">Instructions</div>
+                    <ol>${instructionsHTML}</ol>
+                    ${r.timerSec ? `
+                    <div class="timer-container">
+                        <span>⏱️ Minuteur : <strong>--:--</strong></span>
+                        <button class="timer-btn" onclick="startTimer(this, ${r.timerSec})">${r.timerLabel}</button>
+                    </div>` : ''}
+                </div>
+                ${amazonHTML ? `
+                <div class="amazon-box">
+                    <strong>🛒 Matériel & Produits Recommandés :</strong>
+                    ${amazonHTML}
+                </div>` : ''}
+            `;
+            container.appendChild(card);
+        });
+    }
+
     function updatePortions() {
         const factor = parseFloat(document.getElementById('portionSelect').value);
         const qtyElements = document.querySelectorAll('.qty');
@@ -490,7 +287,6 @@
         });
     }
 
-    // Ajout d'un ingrédient personnalisé
     function addCustomIngredient(event) {
         if (event.key === 'Enter') {
             const input = document.getElementById('customIngredient');
@@ -509,7 +305,6 @@
         }
     }
 
-    // Gestionnaire de minuteurs
     function startTimer(btn, seconds) {
         btn.disabled = true;
         let remaining = seconds;
