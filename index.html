@@ -133,16 +133,17 @@
 
     <main id="main-content">
         <section class="hero">
-            <h1>Des recettes <span>protéinées</span> avec ce que tu as sous la hand</h1>
+            <h1>Des recettes <span>protéinées</span> avec ce que tu as sous la main</h1>
             <p>Saisis tes ingrédients, choisis ton repas et obtiens instantanément des idées simples, rapides et optimisées pour tes macros.</p>
         </section>
 
         <section class="generator-card">
             <form id="recipe-form">
                 <div class="form-grid">
+                    <!-- Ingrédient 1 -->
                     <div class="form-group">
                         <label for="ing1">Ingrédient principal 1</label>
-                        <select id="ing1">
+                        <select id="ing1" onchange="toggleCustomInput('ing1', 'custom-ing1')">
                             <option value="">-- Choisir --</option>
                             <option value="Poulet">Poulet 🍗</option>
                             <option value="Œufs">Œufs 🥚</option>
@@ -152,22 +153,42 @@
                             <option value="Flocons d'avoine">Flocons d'avoine 🌾</option>
                             <option value="Skyr">Skyr / Fromage Blanc 🥣</option>
                             <option value="Boeuf haché">Bœuf Haché 🥩</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="ing2">Ingrédient optionnel 2</label>
-                        <select id="ing2">
-                            <option value="">-- Optionnel --</option>
                             <option value="Riz">Riz 🍚</option>
                             <option value="Banane">Banane 🍌</option>
                             <option value="Avocat">Avocat 🥑</option>
                             <option value="Brocoli">Brocoli 🥦</option>
                             <option value="Patate douce">Patate Douce 🍠</option>
                             <option value="Beurre de cacahuète">Beurre de Cacahuète 🥜</option>
+                            <option value="custom">✍️ Autre (Écrire son ingrédient)...</option>
                         </select>
+                        <input type="text" id="custom-ing1" placeholder="Tape ton ingrédient..." style="display: none; margin-top: 8px;">
                     </div>
 
+                    <!-- Ingrédient 2 -->
+                    <div class="form-group">
+                        <label for="ing2">Ingrédient 2 (Optionnel)</label>
+                        <select id="ing2" onchange="toggleCustomInput('ing2', 'custom-ing2')">
+                            <option value="">-- Optionnel --</option>
+                            <option value="Poulet">Poulet 🍗</option>
+                            <option value="Œufs">Œufs 🥚</option>
+                            <option value="Tofu">Tofu 🧊</option>
+                            <option value="Thon">Thon 🐟</option>
+                            <option value="Whey">Poudre de Whey 🥛</option>
+                            <option value="Flocons d'avoine">Flocons d'avoine 🌾</option>
+                            <option value="Skyr">Skyr / Fromage Blanc 🥣</option>
+                            <option value="Boeuf haché">Bœuf Haché 🥩</option>
+                            <option value="Riz">Riz 🍚</option>
+                            <option value="Banane">Banane 🍌</option>
+                            <option value="Avocat">Avocat 🥑</option>
+                            <option value="Brocoli">Brocoli 🥦</option>
+                            <option value="Patate douce">Patate Douce 🍠</option>
+                            <option value="Beurre de cacahuète">Beurre de Cacahuète 🥜</option>
+                            <option value="custom">✍️ Autre (Écrire son ingrédient)...</option>
+                        </select>
+                        <input type="text" id="custom-ing2" placeholder="Tape ton ingrédient..." style="display: none; margin-top: 8px;">
+                    </div>
+
+                    <!-- Type de repas -->
                     <div class="form-group">
                         <label for="meal-type">Type de Repas</label>
                         <select id="meal-type">
@@ -287,7 +308,7 @@
             { id: 47, title: "Steak Haché & Œufs au Plat (Combo Pro)", type: "diner", ing: ["Boeuf haché", "Œufs"], emoji: "🥩", rating: 5, prot: 52, carbs: 1, fat: 22, cal: 410, prep: 3, cook: 8, rest: 0, ingredients: ["150g de steak haché 5%", "2 œufs"], instructions: ["Cuis le steak.", "Fais frire les œufs au-dessus."] },
             { id: 48, title: "Dessert Frais Skyr, Beurre de Cacahuète & Banane", type: "dessert", ing: ["Skyr", "Beurre de cacahuète", "Banane"], emoji: "🍌", rating: 5, prot: 22, carbs: 32, fat: 10, cal: 300, prep: 4, cook: 0, rest: 0, ingredients: ["150g de Skyr", "15g de beurre de cacahuète", "1 banane"], instructions: ["Incorpore le beurre de cacahuète au Skyr.", "Ajoute la banane."] },
             { id: 49, title: "Bowl Tofu, Patate Douce & Brocoli", type: "diner", ing: ["Tofu", "Patate douce", "Brocoli"], emoji: "🥗", rating: 4, prot: 26, carbs: 45, fat: 8, cal: 350, prep: 12, cook: 18, rest: 0, ingredients: ["140g de tofu", "150g de patate douce", "100g de brocoli"], instructions: ["Cuis le tout au four 18 min à 200°C."] },
-            { id: 50, title: "Pancakes Express Avoine & Skyr", type: "petit-dej", ing: ["Flocons d'avoine", "Skyr"], emoji: "🥞", rating: 5, prot: 22, carbs: 38, fat: 4, cal: 270, prep: 5, cook: 6, rest: 0, ingredients: ["50g de flocons d'avoine", "100g de Skyr", " Un peu d'eau"], instructions: ["Mixe l'avoine, le Skyr et un fond d'eau.", "Fais cuire 3 min par côté."] },
+            { id: 50, title: "Pancakes Express Avoine & Skyr", type: "petit-dej", ing: ["Flocons d'avoine", "Skyr"], emoji: "🥞", rating: 5, prot: 22, carbs: 38, fat: 4, cal: 270, prep: 5, cook: 6, rest: 0, ingredients: ["50g de flocons d'avoine", "100g de Skyr", "Un peu d'eau"], instructions: ["Mixe l'avoine, le Skyr et un fond d'eau.", "Fais cuire 3 min par côté."] },
         ];
 
         let favorites = JSON.parse(localStorage.getItem('pm_favorites')) || [];
@@ -297,24 +318,54 @@
             displayRecipes(recipes.slice(0, 4));
         });
 
+        function toggleCustomInput(selectId, inputId) {
+            const select = document.getElementById(selectId);
+            const input = document.getElementById(inputId);
+            if (select.value === 'custom') {
+                input.style.display = 'block';
+                input.focus();
+            } else {
+                input.style.display = 'none';
+                input.value = '';
+            }
+        }
+
         document.getElementById('recipe-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const ing1 = document.getElementById('ing1').value;
-            const ing2 = document.getElementById('ing2').value;
+            
+            let ing1 = document.getElementById('ing1').value;
+            if (ing1 === 'custom') {
+                ing1 = document.getElementById('custom-ing1').value.trim().toLowerCase();
+            } else {
+                ing1 = ing1.toLowerCase();
+            }
+
+            let ing2 = document.getElementById('ing2').value;
+            if (ing2 === 'custom') {
+                ing2 = document.getElementById('custom-ing2').value.trim().toLowerCase();
+            } else {
+                ing2 = ing2.toLowerCase();
+            }
+
             const type = document.getElementById('meal-type').value;
 
             let filtered = recipes.filter(r => {
                 let matchType = type === 'all' || r.type === type;
-                let matchIng = true;
+                
+                let recipeIngs = r.ing.map(i => i.toLowerCase());
+                let recipeIngsFull = r.ingredients.map(i => i.toLowerCase()).join(' ');
 
-                if (ing1) matchIng = matchIng && r.ing.includes(ing1);
-                if (ing2) matchIng = matchIng && r.ing.includes(ing2);
+                let match1 = !ing1 || recipeIngs.some(i => i.includes(ing1)) || recipeIngsFull.includes(ing1);
+                let match2 = !ing2 || recipeIngs.some(i => i.includes(ing2)) || recipeIngsFull.includes(ing2);
 
-                return matchType && matchIng;
+                return matchType && match1 && match2;
             });
 
-            if(filtered.length === 0) {
-                filtered = recipes.filter(r => (ing1 && r.ing.includes(ing1)) || (type !== 'all' && r.type === type));
+            if(filtered.length === 0 && (ing1 || ing2)) {
+                filtered = recipes.filter(r => {
+                    let recipeIngsFull = r.ingredients.map(i => i.toLowerCase()).join(' ');
+                    return (ing1 && recipeIngsFull.includes(ing1)) || (ing2 && recipeIngsFull.includes(ing2));
+                });
             }
 
             displayRecipes(filtered.slice(0, 8));
